@@ -17,7 +17,7 @@ DROP TABLE Csoportok;
 CREATE TABLE Csoportok(
 	csoport_név			VARCHAR2(50),
 	csoportvezetõ		VARCHAR2(30),
-	csoport_pontszám	INTEGER
+	csoport_pontszám	NUMBER
 )
 
 DROP TABLE Házak;
@@ -32,7 +32,7 @@ ALTER TABLE Csoportok ADD CONSTANT p_Csoportok PRIMARY KEY (csoport_név,csoportv
 ALTER TABLE Házak ADD CONSTANT p_Házak PRIMARY KEY (ház_szám)
 
 ALTER TABLE Lakók ADD CONSTANT f_Lakók_Csoportok FOREIGN KEY (Csoport_név,Csoportvezetõ)
-	REFERENCES Csoportok (Csoport_név,Csoportvezetõ);
+	REFERENCES Csoportok (csoport_név,csoportvezetõ);
 	
 ALTER TABLE Lakók ADD CONSTANT f_Lakók_Házak FOREIGN KEY (ház_szám)
 	REFERENCES Házak (ház_szám);
