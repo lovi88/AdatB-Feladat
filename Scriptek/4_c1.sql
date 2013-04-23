@@ -1,0 +1,1 @@
+--házankénti lefoglaltság
