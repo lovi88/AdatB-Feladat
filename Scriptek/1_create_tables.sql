@@ -11,22 +11,25 @@ CREATE TABLE Lakók (
 	ház_szám					NUMBER(4),
 	Csoport_név					VARCHAR2(50),
 	Csoportvezetõ				VARCHAR2(30)
-)
+);
+
+SELECT * FROM Lakók;
 
 DROP TABLE Csoportok;
 CREATE TABLE Csoportok(
 	csoport_név			VARCHAR2(50),
 	csoportvezetõ		VARCHAR2(30),
 	csoport_pontszám	NUMBER
-)
+);
 
 DROP TABLE Házak;
 CREATE TABLE Házak (
 	ház_szám		NUMBER(4),
 	ház_megnevezés	VARCHAR2(25) NOT NULL,
 	férõhely_szám	NUMBER(4)
-)
+);
 
+--TODO
 ALTER TABLE Lakók ADD CONSTANT p_Lakók PRIMARY KEY (Név,Egészségbiztosítási_szám);
 ALTER TABLE Csoportok ADD CONSTANT p_Csoportok PRIMARY KEY (csoport_név,csoportvezetõ);
 ALTER TABLE Házak ADD CONSTANT p_Házak PRIMARY KEY (ház_szám)
