@@ -13,13 +13,12 @@ CREATE TABLE Lakók (
 	Csoportvezetõ				VARCHAR2(30)
 );
 
-SELECT * FROM Lakók;
 
 DROP TABLE Csoportok;
 CREATE TABLE Csoportok(
 	csoport_név			VARCHAR2(50),
 	csoportvezetõ		VARCHAR2(30),
-	csoport_pontszám	NUMBER(6,1)
+	csoport_pontszám	NUMBER(5,1)
 );
 
 DROP TABLE Házak;
