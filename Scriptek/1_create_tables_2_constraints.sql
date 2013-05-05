@@ -25,7 +25,7 @@ DROP TABLE Házak;
 CREATE TABLE Házak (
 	ház_szám		NUMBER(3),
 	ház_megnevezés	VARCHAR2(25) NOT NULL,
-	férõhely_szám	NUMBER(3)
+	férõhely_szám	NUMBER(3) NOT NULL
 );
 
 
