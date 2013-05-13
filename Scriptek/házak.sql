@@ -7,6 +7,8 @@ PROMPT *  Ház módosítása (ház_mód)                     *
 PROMPT *  Ház törlése (ház_töröl)                      *
 PROMPT *  Házankénti lakóbeosztás (ház_lakó_lista)     *
 PROMPT *  Házankénti telítettség (ház_tel)             *
+PROMPT *                                               *
+PROMPT *                   *
 PROMPT *************************************************
 
 ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót:'

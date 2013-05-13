@@ -12,7 +12,7 @@ PROMPT *  Résszót tartalmazó nevû lakók listája       (Lakó_lista_résznév)      
 PROMPT *                                                                              *
 PROMPT *  Adott nemû Lakók átlagéletkora              (Lakó_nem_átlagéletkor)         *
 PROMPT *  A 18 évnél fiatalabb lakók száma              (Lakó_sum_tizennyolc_alatt)   *
-PROMPT *  --KORSZÁMÍTO FÜGGVÉNY?       ()     *
+PROMPT *        ()     *
 PROMPT *                                                                              *
 PROMPT *         ()     *
 PROMPT *         ()     *

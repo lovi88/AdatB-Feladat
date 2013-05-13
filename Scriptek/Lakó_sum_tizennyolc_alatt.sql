@@ -9,10 +9,10 @@ CENTER ============================================================ SKIP 3
 
 
 SELECT 
-	SUM((TO_CHAR(SYSDATE,'YYYY') - TO_CHAR(SzületésiDátum,'YYYY'))) as "Kiskorúak száma"
+	SUM(KorSzámít(SzületésiDátum)) as "Kiskorúak száma"
 FROM Lakók
 ORDER BY Név
-HAVING (TO_CHAR(SYSDATE,'YYYY') - TO_CHAR(SzületésiDátum,'YYYY'))<18;
+HAVING KorSzámít(SzületésiDátum)<18;
 
 
 
