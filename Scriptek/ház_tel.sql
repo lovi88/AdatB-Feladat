@@ -11,7 +11,7 @@ CENTER ============================================================ SKIP 3
 create or replace view ház_lakó as
 SELECT
 	Házak.ház_szám,
-	count(Név) as Lakószám
+	count(Egészségbiztosítási_szám) as Lakószám
 FROM  Házak, Lakók
 WHERE Házak.ház_szám = Lakók.ház_szám
 GROUP BY Házak.ház_szám;

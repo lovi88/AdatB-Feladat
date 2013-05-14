@@ -1,5 +1,4 @@
 --Csoportok Tesztedatok
-
 INSERT INTO Csoportok 
 	(csoport_név, csoportvezetõ, csoport_pontszám)
 VALUES

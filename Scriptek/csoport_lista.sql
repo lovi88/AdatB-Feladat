@@ -1,5 +1,5 @@
 SET linesize 70
-SET pagesize 20
+SET pagesize 25
 
 TTITLE 'Csoportok listálya'
 BTITLE 'Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.'
