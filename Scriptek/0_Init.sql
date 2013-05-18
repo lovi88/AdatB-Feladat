@@ -3,7 +3,6 @@ ALTER SESSION set nls_date_format = 'YYYY-MM-DD';
 
 @@ 13_Jogosultságok
 connect Admin1/passAdmin01
-
 @@ 1_create_tables_2_constraints
 
 @@ 3_b_Insert_Csoportok
