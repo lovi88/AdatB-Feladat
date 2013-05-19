@@ -31,7 +31,6 @@ GRANT
 	CampBoss;
 
 
-
 CREATE USER Admin1
 	IDENTIFIED BY passAdmin01
 	QUOTA  UNLIMITED  ON  users;
