@@ -1,16 +1,21 @@
-PROMPT oszlop m√∫dos√≠t√°s
+PROMPT oszlop m˙dosÌt·s
 
-PROMPT Melyik t√°bl√°nak szeretn√© m√≥dos√≠tani az oszlop√°t:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bl·nak szeretnÈ mÛdosÌtani az oszlop·t:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla
+ACCEPT t·bla
+
+PROMPT
+desc &t·bla
+PROMPT
+
 ACCEPT o_neve PROMPT 'oszlop neve: '
-ACCEPT o_tipus PROMPT 'oszlop t√≠pusa: '
+ACCEPT o_tipus PROMPT 'oszlop tÌpusa: '
 
 
 
-ALTER TABLE &t√°bla
+ALTER TABLE &t·bla
 	MODIFY (&o_neve &o_tipus);

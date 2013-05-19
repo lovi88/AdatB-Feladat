@@ -1,18 +1,18 @@
-PROMPT T√°borhely √územeltet≈ë Adatb√°zis Adminisztr√°tori almen≈±
+PROMPT T·borhely ‹zemeltetı Adatb·zis Adminisztr·tori almen˚
 PROMPT
 PROMPT ***********************************************************************
-PROMPT *  √öj oszlop hozz√°ad√°sa                 (ddl_oszlop_√∫j)               *
-PROMPT *  Oszlop m√≥dos√≠t√°sa                    (ddl_oszlop_mod)              *
-PROMPT *  Oszlopok logikai t√∂rl√©se             (ddl_oszlop_del_logic)        *
-PROMPT *  Oszlopok t√∂rl√©sek v√©gleges√≠t√©se      (ddl_oszlop_del_logic_finish) *
-PROMPT *  Oszlopok fizikai t√∂rl√©se             (ddl_oszlop_del_fizik)        *
-PROMPT *  Oszlop √°tnevez√©s                     (ddl_oszlop_ren)              *
-PROMPT *  T√°bla √°tnevez√©s                      (ddl_t√°bla_√°tnevez)           *
-PROMPT *  T√°bla t√∂rl√©se                        (ddl_t√°bla_t√∂r√∂l)             *
-PROMPT *  Megszor√≠t√°s hozz√°ad√°sa               (ddl_constraint_√∫j)           *
-PROMPT *  Megszor√≠t√°s megv√°ltoztat√°sa          (ddl_constraint_mod)          *
-PROMPT *  Megszor√≠t√°s t√∂rl√©s                   (ddl_constraint_t√∂r√∂l)        *
+PROMPT *  ⁄j oszlop hozz·ad·sa                 (ddl_oszlop_˙j)               *
+PROMPT *  Oszlop mÛdosÌt·sa                    (ddl_oszlop_mod)              *
+PROMPT *  Oszlopok logikai tˆrlÈse             (ddl_oszlop_del_logic)        *
+PROMPT *  Oszlopok tˆrlÈsek vÈglegesÌtÈse      (ddl_oszlop_del_logic_finish) *
+PROMPT *  Oszlopok fizikai tˆrlÈse             (ddl_oszlop_del_fizik)        *
+PROMPT *  Oszlop ·tnevezÈs                     (ddl_oszlop_ren)              *
+PROMPT *  T·bla ·tnevezÈs                      (ddl_t·bla_·tnevez)           *
+PROMPT *  T·bla tˆrlÈse                        (ddl_t·bla_tˆrˆl)             *
+PROMPT *  MegszorÌt·s hozz·ad·sa               (ddl_constraint_˙j)           *
+PROMPT *  MegszorÌt·s megv·ltoztat·sa          (ddl_constraint_mod)          *
+PROMPT *  MegszorÌt·s tˆrlÈs                   (ddl_constraint_tˆrˆl)        *
 PROMPT ***********************************************************************
 
-ACCEPT al PROMPT 'A k√≠v√°nt almen≈± el√©r√©s√©hez √≠rjon be, egy a z√°r√≥jelekben l√©v≈ë sz√≥t:'
+ACCEPT al PROMPT 'A kÌv·nt almen˚ elÈrÈsÈhez Ìrjon be, egy a z·rÛjelekben lÈvı szÛt:'
 @@ &al
