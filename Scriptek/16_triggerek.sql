@@ -30,7 +30,7 @@ declare
 begin
 	szam := CsoportvezetõCsoportSzám(:new.csoportvezetõ);
 	
-	if szam>=3
+	if szam>=5
 	then
 		RAISE_APPLICATION_ERROR(-20001,'5-nél több csoportja lenne');
 	end if;
@@ -104,3 +104,16 @@ begin
 end;
 /
 SHOW ERRORS
+
+DROP TRIGGER tiltás;
+CREATE OR REPLACE TRIGGER tiltás
+BEFORE DELETE OR INSERT OR UPDATE ON Házak
+BEGIN
+	IF to_char(sysdate,'HH24:MI') NOT BETWEEN '08:00' AND '16:00'
+	THEN
+	RAISE_APPLICATION_ERROR(-20111, 'Az adatbázis csak munkaidõben módosítható!');
+	END IF;
+END;
+/
+SHOW ERRORS
+
