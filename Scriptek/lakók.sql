@@ -16,8 +16,8 @@ PROMPT *                                                                        
 PROMPT *                                                                             *
 PROMPT * Azon lakók, akik a legnagyobb házakban vannak (Lakó_Legnagyobb_házak)       *
 PROMPT * A legfiatalabb lakó      (Lakó_Legfiatalabb_ALL)                            *
-PROMPT * A legfiatalabb lakó      (Lakó_legfiatalabb_minnel)                         *
-PROMPT * A legidõsebb lakó        (Lakó_legidõsebb_maxxal)                           *
+PROMPT * A legfiatalabb lakó      (Lakó_legfiatalabb_maxxal)                         *
+PROMPT * A legidõsebb lakó        (Lakó_legidõsebb_minnel)                           *
 PROMPT * A legidõsebb lakó        (Lakó_legidõsebb_ANY)                              *
 PROMPT *******************************************************************************
 

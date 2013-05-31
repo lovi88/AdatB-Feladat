@@ -1,11 +1,11 @@
---@Lakó_legidõsebb_ANY
+--@Lakó_legfiatalabb_maxxal
 
 SET LINESIZE 150
 SET PAGESIZE 15
 
 BTITLE 'Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.'
 
-TTITLE CENTER 'Lakók Listája' SKIP 1 -
+TTITLE CENTER 'A legfiatalabb lakó' SKIP 1 -
 CENTER ==================== SKIP 3
 
 COLUMN Név HEADING 'Neve'		FORMAT A20 JUSTIFY CENTER
@@ -28,8 +28,7 @@ SELECT
 	Tartózkodas_ig,
 	Ország
 FROM Lakók
-where NOT(SzületésiDátum > ANY (Select SzületésiDátum From Lakók));
-
+where SzületésiDátum = (select max(SzületésiDátum) from lakók);
 
 TTITLE OFF
 BTITLE OFF
