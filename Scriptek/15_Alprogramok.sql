@@ -1,3 +1,5 @@
+--@15_Alprogramok
+
 CREATE OR REPLACE FUNCTION KorSzámít(szül_dátum IN DATE)
 	RETURN NUMBER
 AS
@@ -65,3 +67,28 @@ begin
 end;
 /
 
+
+drop function LétezõCsoport;
+create or replace function LétezõCsoport(
+								cs_vez in Csoportok.csoportvezetõ%TYPE,
+								cs_megnevezés IN Csoportok.csoport_név%TYPE
+							)
+	return BOOLEAN
+is
+	szam NUMBER;
+begin
+
+	SELECT count(csoportvezetõ)
+	INTO szam
+	FROM Csoportok
+	WHERE csoportvezetõ = cs_vez and csoport_név = cs_megnevezés
+	GROUP BY csoportvezetõ;
+	
+	if szam >= 0
+	then
+		return true;
+	end if;
+	
+	return false;
+end;
+/

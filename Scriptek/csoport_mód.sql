@@ -1,3 +1,5 @@
+--@csoport_mód
+
 PROMPT Csoport módosítása
 PROMPT Módosítani kívánt csoport kijelölése
 ACCEPT csoport_név PROMPT 'Csoport neve: '
@@ -7,5 +9,5 @@ ACCEPT oszlop PROMPT 'Melyik oszlopot kívánja módosítani (csoport_név|csoportvez
 ACCEPT érték PROMPT 'adja meg az értéket, amire átírja: '
 
 
-UPDATE Csoportok SET &oszlop=&érték
-WHERE csoport_név=&csoport_név AND csoportvezetõ=&csoportvezetõ;
+UPDATE Csoportok SET &oszlop='&érték'
+WHERE csoport_név='&csoport_név' AND csoportvezetõ='&csoportvezetõ';
