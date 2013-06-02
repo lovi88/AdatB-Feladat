@@ -1,0 +1,36 @@
+
+A nézet létrejött.
+
+
+                        Elsõ 3 Ház lakó listája                       
+     ============================================================     
+                                                                      
+                                                                      
+                                               Egészség-              
+                                              biztosítási             
+   HÁZSZÁM LAKÓ                                   szám                
+---------- ------------------------------ --------------------        
+         1 Assunta Holman                 214782455                   
+           Corina Morales                 909229179                   
+           Darin Preston                  035552095                   
+           Hugo Maldonado                 992531646                   
+         2 Corina Head                    827416495                   
+           Liza Winters                   565402276                   
+           Marcelino Carroll              051884531                   
+           Oma Albert                     033187800                   
+           Rae Goff                       470591241                   
+         3 Dario Gates                    372372233                   
+           Dawna Blackburn                005279993                   
+           Edgardo Walter                 895347619                   
+           Lynell Wyatt                   460086010                   
+           Marcelino Gilbert              469307689                   
+           Mariam Camacho                 860198127                   
+           Michael Ball                   286411333                   
+           Natividad Hudson               467581788                   
+           Rodolfo Hamilton               402222458                   
+
+
+     Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+18 sor kijelölve.
+

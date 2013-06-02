@@ -1,0 +1,23 @@
+
+V.  Jún.   02                             lap    1
+                  Házak listája
+
+Házszám       Ház neve       Max férõhely         
+------- -------------------- ------------         
+      1 fa                             10         
+      2 piros                          20         
+      3 kék                            15         
+      4 zöld                           12         
+      5 nagy                           30         
+      6 kis                             5         
+      7 kék                            10         
+      8 fa                             15         
+      9 nagy                           40         
+     10 sárga                          10         
+
+
+
+Készült: a Táborhely Üzemeltetõi segédszoftver seg
+
+10 sor kijelölve.
+

@@ -1,0 +1,15 @@
+Táborhely Üzemeltetõ: Csoportok almenû
+
+*****************************************************************
+*  Csoportok listázása                  (csoport_lista)         *
+*  Új Csoport felvétele                 (csoport_új)            *
+*  Csoport módosítása                   (csoport_mód)           *
+*  Csoport törlése                      (csoport_töröl)         *
+*                                                               *
+*  Kiválasztott csoportvezetõ átlaga    (csoport_kiv_atlag)     *
+*  Az elsõ öt csoport                   (csoport_elsõ_öt)       *
+*                                                               *
+*  Új csoport / csoport módosítás       (csoport_pl_ins_up)     *
+*  Csoport töröl / Kilistáz             (csoport_pl_del_sel)    *
+*****************************************************************
+A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: csoport_lista

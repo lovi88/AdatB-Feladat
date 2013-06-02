@@ -1,0 +1,63 @@
+
+                       Házankénti lakók listája                       
+     ============================================================     
+                                                                      
+                                                                      
+                                           Egészség-                  
+                                          biztosítási                 
+   HÁZSZÁM LAKÓ                              szám                     
+---------- ------------------------------ -----------                 
+         1 Assunta Holman                 214782455                   
+           Corina Morales                 909229179                   
+           Darin Preston                  035552095                   
+           Hugo Maldonado                 992531646                   
+         2 Corina Head                    827416495                   
+           Liza Winters                   565402276                   
+           Marcelino Carroll              051884531                   
+           Oma Albert                     033187800                   
+           Rae Goff                       470591241                   
+         3 Dario Gates                    372372233                   
+           Dawna Blackburn                005279993                   
+           Edgardo Walter                 895347619                   
+           Lynell Wyatt                   460086010                   
+           Marcelino Gilbert              469307689                   
+           Mariam Camacho                 860198127                   
+           Michael Ball                   286411333                   
+           Natividad Hudson               467581788                   
+           Rodolfo Hamilton               402222458                   
+         4 Colton Ramos                   975432346                   
+           Cyrus Hebert                   103516159                   
+           Frederic Emerson               263024448                   
+           Mac Conrad                     325930610                   
+           Marilu Maynard                 803490125                   
+           Marylyn Johnston               533071450                   
+         5 Alease Boyer                   541706019                   
+           Teressa Chan                   915242705                   
+         6 Ellsworth Barker               934426460                   
+           Emil Reilly                    686710652                   
+           Jeffry Spencer                 457369261                   
+           Marco Cantrell                 778512315                   
+           Robin Marsh                    566090825                   
+           Sherlene Sims                  914695312                   
+         7 Ashly Ferrell                  905573925                   
+           Dawna Conner                   154551913                   
+           Devon Dunn                     160493949                   
+           Ehtel Moon                     074530611                   
+           Jeanetta Sandoval              646451976                   
+           Kelly Harper                   689145145                   
+           Rex Dale                       083871367                   
+           Willis Roman                   326817161                   
+           Woodrow Bates                  490833657                   
+         8 Bette Contreras                846169522                   
+           Ervin Bowen                    482157558                   
+           Rosie Leonard                  867367180                   
+           Shanita Harrington             886430197                   
+           Susannah Bell                  505006783                   
+         9 Jessie Frye                    952134827                   
+           Leo Greer                      294386949                   
+           Lesley Snow                    236557659                   
+        10 Cyrus Hess                     931677615                   
+     Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+50 sor kijelölve.
+

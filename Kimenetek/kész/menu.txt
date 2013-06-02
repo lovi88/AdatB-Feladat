@@ -1,0 +1,9 @@
+Táborhely Üzemeltetõ: Fõmenõ
+
+*************************************************
+*  Házak kezelése         (házak)               *
+*  Coportok kezelése      (csoportok)           *
+*  Lakók kezelése         (lakók)               *
+*  DDL-Táblamódosítás     (ddl)                 *
+*************************************************
+A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: házak

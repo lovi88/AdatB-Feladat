@@ -1,0 +1,23 @@
+Táborhely Üzemeltetõ: Lakók almenû
+
+******************************************************************
+* Lakók listázása                     (Lakó_lista)               *
+* Új Lakó felvétele                   (Lakó_új)                  *
+* Lakó módosítása                     (Lakó_mód)                 *
+*                                                                *
+* Lakó törlése                        (Lakó_töröl)               *
+* Lakók meghatározott nem szerint     (Lakó_lista_nem)           *
+* Házba még be nem sorolt lakók       (Lakó_lista_háznélkül)     *
+* Résszót tartalmazó nevû lakók       (Lakó_lista_résznév)       *
+*                                                                *
+* Adott nemû Lakók átlagéletkora      (Lakó_nem_átlagéletkor)    *
+* A 18 évnél fiatalabb lakók száma    (Lakó_sum_tizennyolc_alatt)*
+*                                                                *
+*                                                                *
+* Azon lakók, a legnagyobb házakból    (Lakó_Legnagyobb_házak)   *
+* A legfiatalabb lakó                  (Lakó_Legfiatalabb_ALL)   *
+* A legfiatalabb lakó                  (Lakó_legfiatalabb_maxxal)*
+* A legidõsebb lakó                    (Lakó_legidõsebb_minnel)  *
+* A legidõsebb lakó                    (Lakó_legidõsebb_ANY)     *
+******************************************************************
+A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: Lakó_lista

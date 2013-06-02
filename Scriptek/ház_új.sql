@@ -15,3 +15,7 @@ VALUES
 		&h_férõhely
 	)
 ;
+
+UNDEFINE h_szám
+UNDEFINE h_megnevezés
+UNDEFINE h_férõhely

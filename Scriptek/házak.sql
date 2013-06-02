@@ -13,5 +13,5 @@ PROMPT *  Szinte betelt házak tehermentesítése (ház_tehermentesítõ)     *
 PROMPT *                                                                *
 PROMPT ******************************************************************
 
-ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót:'
+ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: '
 @@ &al

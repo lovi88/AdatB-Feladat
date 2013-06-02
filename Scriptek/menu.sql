@@ -1,3 +1,5 @@
+--@menu
+
 PROMPT Táborhely Üzemeltetõ: Fõmenõ
 PROMPT
 PROMPT *************************************************
@@ -7,5 +9,5 @@ PROMPT *  Lakók kezelése         (lakók)               *
 PROMPT *  DDL-Táblamódosítás     (ddl)                 *
 PROMPT *************************************************
 
-ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót:'
+ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: '
 @@ &al

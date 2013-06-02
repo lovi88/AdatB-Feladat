@@ -1,0 +1,7 @@
+Új ház felvétele
+Adja meg a házszámot: 99
+Adja meg a ház nevét: teszt1
+Adja meg a férõhelyek számát: 88
+
+1 sor létrejött.
+
