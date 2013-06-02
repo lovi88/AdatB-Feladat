@@ -1,0 +1,9 @@
+Csoport módosítása
+Módosítani kívánt csoport kijelölése
+Csoport neve: tcs
+Csoport csoportvezetõje: tcsv
+Melyik oszlopot kívánja módosítani (csoport_név|csoportvezetõ|csoport_pontszám):csoport_pontszám
+adja meg az értéket, amire átírja: 10
+
+1 sor módosítva.
+

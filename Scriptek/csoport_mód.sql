@@ -11,3 +11,6 @@ ACCEPT érték PROMPT 'adja meg az értéket, amire átírja: '
 
 UPDATE Csoportok SET &oszlop='&érték'
 WHERE csoport_név='&csoport_név' AND csoportvezetõ='&csoportvezetõ';
+
+UNDEFINE csoport_név
+UNDEFINE csoportvezetõ

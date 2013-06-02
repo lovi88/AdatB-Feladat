@@ -13,3 +13,6 @@ VALUES
 		'&cs_vez'
 	)
 ;
+
+UNDEFINE cs_megnevezés
+UNDEFINE cs_vez

@@ -1,0 +1,50 @@
+Csoport törlése, vagy ha nem található, a megtalálásának segítése
+Adja meg a csoportot egyértelmûen meghatározó tulajdonságokat:
+Adja meg csoport vezetõjének a nevét: tcsv
+Adja meg a csoport nevét: tcs
+select                                                                
+Azon Csoportok, melyeknek a neve hasonló a keresett kifejezéshez      
+Csoport neve                                                          
+tcs1                                                                  
+Csoportvezetõ neve                                                    
+tcsv1                                                                 
+Csoport pontszáma                                                     
+---------------------------------------------                         
+Csoport neve                                                          
+tcs2                                                                  
+Csoportvezetõ neve                                                    
+tcsv1                                                                 
+Csoport pontszáma                                                     
+15                                                                    
+---------------------------------------------                         
+Csoport neve                                                          
+tcs3                                                                  
+Csoportvezetõ neve                                                    
+tcsv1                                                                 
+Csoport pontszáma                                                     
+30                                                                    
+---------------------------------------------                         
+Csoport neve                                                          
+tcs4                                                                  
+Csoportvezetõ neve                                                    
+tcsv1                                                                 
+Csoport pontszáma                                                     
+100                                                                   
+---------------------------------------------                         
+Csoport neve                                                          
+tcs5                                                                  
+Csoportvezetõ neve                                                    
+tcsv2                                                                 
+Csoport pontszáma                                                     
+77                                                                    
+---------------------------------------------                         
+Csoport neve                                                          
+tcs5                                                                  
+Csoportvezetõ neve                                                    
+tcsv_1                                                                
+Csoport pontszáma                                                     
+10                                                                    
+---------------------------------------------                         
+
+A PL/SQL eljárás sikeresen befejezõdött.
+

@@ -1,0 +1,7 @@
+Csoport Törlése
+Törölni kívánt csoport kijelölése
+Csoport neve: tcs
+Csoport csoportvezetõje: tcsv
+
+1 sor törölve.
+

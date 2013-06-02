@@ -7,6 +7,8 @@ PROMPT Csoport törlése, vagy ha nem található, a megtalálásának segítése
 PROMPT Adja meg a csoportot egyértelmûen meghatározó tulajdonságokat:
 ACCEPT cs_vez PROMPT 'Adja meg csoport vezetõjének a nevét: '
 ACCEPT cs_megnevezés PROMPT 'Adja meg a csoport nevét: '
+COLUMN csoport_név FORMAT A20 HEADING 'Coport neve' JUSTIFY CENTER
+
 
 DECLARE
 	
@@ -77,3 +79,5 @@ BEGIN
 	
 END;
 /
+
+COLUMN csoport_név CLEAR

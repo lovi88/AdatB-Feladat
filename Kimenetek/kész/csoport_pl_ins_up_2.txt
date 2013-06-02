@@ -1,0 +1,32 @@
+Új Csoport felvétele, vagy ha létezik, módosítása
+Adja meg a csoportot egyértelmûen meghatározó tulajdonságokat:
+Adja meg csoport vezetõjének a nevét: tcsv1
+Adja meg csoport vezetõjének a nevét (ez lesz az új vezetõ, ha eltér): tcsv_1
+Adja meg a csoport nevét: tcs5
+Adja meg a csoport nevét (ez lesz az új név, ha eltér): tcs_5
+
+CSOPORT_NÉV                                                           
+--------------------------------------------------                    
+CSOPORTVEZETÕ                  CSOPORT_PONTSZÁM                       
+------------------------------ ----------------                       
+tcs5                                                                  
+tcsv1                                        20                       
+                                                                      
+
+1 sor kijelölve.
+
+Adja meg a csoport pontszámát
+-negatív érték módosításnál hibás, új felvételnél ellenben azt jelenti, hogy nem adja meg
+-írja vissza az eredeti értéket, ha nem kívánja modosítani
+pontszám: 10
+Létezõ csoport szerkesztése...                                        
+vezetõ átírása...                                                     
+vezetõ átírása megtörtént                                             
+csoportnév átírása...                                                 
+csoportnév átírása megtörtént                                         
+pontszám átírása...                                                   
+pontszám átírása megtörtént                                           
+
+A PL/SQL eljárás sikeresen befejezõdött.
+
+Nincsenek hibák.

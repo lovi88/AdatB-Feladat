@@ -1,0 +1,28 @@
+
+V.  Jún.   02                                                 lap    1
+                          Csoportok listálya
+
+    Coport neve       Csoportvezetõ neve  Coport pontszáma            
+-------------------- -------------------- ----------------            
+Medvék               Tommie Martinez                2071.4            
+Cimborák             Hilaria Vargas                  218.9            
+Gumikacsa            Yuri Black                     6380.4            
+Haverok              Alvera Walton                  4703.8            
+Manók                Kip Mack                       5053.6            
+Krumplipucolók       Shirly Logan                   5006.4            
+Madarak              Tanner Daniels                 4157.0            
+BlaBla               Ja Noble                       4535.5            
+Cimborák             Steven Wallace                 4852.6            
+Oracle               Scott                          9999.9            
+tesztCsop            tesztVezetõ                                      
+tcs1                 tcsv1                                            
+tcs2                 tcsv1                            15.0            
+tcs3                 tcsv1                            30.0            
+tcs4                 tcsv1                           100.0            
+
+
+
+     Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+15 sor kijelölve.
+

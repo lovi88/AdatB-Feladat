@@ -1,0 +1,10 @@
+Csoport törlése, vagy ha nem található, a megtalálásának segítése
+Adja meg a csoportot egyértelmûen meghatározó tulajdonságokat:
+Adja meg csoport vezetõjének a nevét: tcsv1
+Adja meg a csoport nevét: tcs1
+select                                                                
+törlés...                                                             
+törlés lezajlott                                                      
+
+A PL/SQL eljárás sikeresen befejezõdött.
+

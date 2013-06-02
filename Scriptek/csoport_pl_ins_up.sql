@@ -95,29 +95,24 @@ DECLARE
 	IS
 		pontszam Csoportok.csoport_pontszám%TYPE;
 	BEGIN
-		DBMS_OUTPUT.PUT_LINE('main');			
-		DBMS_OUTPUT.PUT_LINE(cs_vez);
-		DBMS_OUTPUT.PUT_LINE(cs_vez_új);
-		DBMS_OUTPUT.PUT_LINE(cs_megnevezés);
-		DBMS_OUTPUT.PUT_LINE(cs_megnevezés_új);
-		DBMS_OUTPUT.PUT_LINE(cs_pontszam);
-
 		if LétezõCsoport(cs_vez,cs_megnevezés) 
 		then
 			DBMS_OUTPUT.PUT_LINE('Létezõ csoport szerkesztése...');
 			
 			if cs_vez != cs_vez_új
 			then
+				DBMS_OUTPUT.PUT_LINE('vezetõ átírása...');
 				UpdateVezetõ(cs_vez,cs_megnevezés,cs_vez_új);
 				cs_vez := cs_vez_új;
-				DBMS_OUTPUT.PUT_LINE('vezetõ átírása...');
+				DBMS_OUTPUT.PUT_LINE('vezetõ átírása megtörtént');
 			end if;
 			
 			if cs_megnevezés != cs_megnevezés_új
 			then
+				DBMS_OUTPUT.PUT_LINE('csoportnév átírása...');
 				UpdateCsoportNév(cs_vez,cs_megnevezés,cs_megnevezés_új);
 				cs_megnevezés := cs_megnevezés_új;
-				DBMS_OUTPUT.PUT_LINE('csoportnév átírása...');
+				DBMS_OUTPUT.PUT_LINE('csoportnév átírása megtörtént');
 			end if;
 			
 			
@@ -128,11 +123,11 @@ DECLARE
 			
 			if pontszam != cs_pontszam
 			then
-				UpdatePontszám(cs_vez,cs_megnevezés,cs_pontszam);
 				DBMS_OUTPUT.PUT_LINE('pontszám átírása...');
+				UpdatePontszám(cs_vez,cs_megnevezés,cs_pontszam);
+				DBMS_OUTPUT.PUT_LINE('pontszám átírása megtörtént');
 			end if;
-			
-			
+
 		else	
 			DBMS_OUTPUT.PUT_LINE('új sor létrejött...');
 			Ins(cs_vez,cs_megnevezés);
@@ -155,7 +150,7 @@ BEGIN
 	cs_megnevezés := '&cs_megnevezés';
 	cs_vez := '&cs_vez';
 	
-	Main(cs_vez,'&cs_vez_új',cs_megnevezés,'&cs_megnevezés',&cs_pontszam);
+	Main(cs_vez,'&cs_vez_új',cs_megnevezés,'&cs_megnevezés_új',&cs_pontszam);
 
 	EXCEPTION
 	WHEN pontszám_tartomány_hiba

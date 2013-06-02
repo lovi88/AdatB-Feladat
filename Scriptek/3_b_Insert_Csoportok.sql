@@ -1,3 +1,4 @@
+--@3_b_Insert_Csoportok
 --Csoportok Tesztedatok
 INSERT INTO Csoportok 
 	(csoport_név, csoportvezetõ, csoport_pontszám)
@@ -98,3 +99,43 @@ VALUES
 	)
 ;
 
+
+INSERT INTO Csoportok 
+	(csoport_név, csoportvezetõ, csoport_pontszám)
+VALUES
+	(
+		'tcs1',
+		'tcsv1',
+		null
+	)
+;
+
+INSERT INTO Csoportok 
+	(csoport_név, csoportvezetõ, csoport_pontszám)
+VALUES
+	(
+		'tcs2',
+		'tcsv1',
+		15
+	)
+;
+
+INSERT INTO Csoportok 
+	(csoport_név, csoportvezetõ, csoport_pontszám)
+VALUES
+	(
+		'tcs3',
+		'tcsv1',
+		30
+	)
+;
+
+INSERT INTO Csoportok 
+	(csoport_név, csoportvezetõ, csoport_pontszám)
+VALUES
+	(
+		'tcs4',
+		'tcsv1',
+		100
+	)
+;

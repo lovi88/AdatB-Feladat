@@ -4,4 +4,7 @@ ACCEPT csoport_név PROMPT 'Csoport neve: '
 ACCEPT csoportvezetõ PROMPT 'Csoport csoportvezetõje: '
 
 DELETE FROM Csoportok
-WHERE csoport_név=&csoport_név AND csoportvezetõ=&csoportvezetõ;
+WHERE csoport_név='&csoport_név' AND csoportvezetõ='&csoportvezetõ';
+
+UNDEFINE csoport_név
+UNDEFINE csoportvezetõ

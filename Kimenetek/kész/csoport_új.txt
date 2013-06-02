@@ -1,0 +1,6 @@
+Új Csoport felvétele
+Adja meg a csoport nevét: tcs
+Adja meg csoport vezetõjének a nevét: tcsv
+
+1 sor létrejött.
+

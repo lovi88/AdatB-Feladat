@@ -1,0 +1,112 @@
+{\rtf1\ansi\deff0\deftab480
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+{\f006 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f0\fs20\cb13\cf12 \highlight3\cf2 --@csoport_pl_del_sel\par
+\highlight1\cf0 \par
+\highlight5\cf4\b SET\highlight1\cf0\b0  \highlight11\cf10 verify\highlight1\cf0  \highlight5\cf4\b OFF\highlight1\cf0\b0 \par
+\highlight5\cf4\b SET\highlight1\cf0\b0  \highlight11\cf10 serveroutput\highlight1\cf0  \highlight5\cf4\b ON\highlight1\cf0\b0 \par
+\par
+\highlight11\cf10 PROMPT\highlight1\cf0  \highlight11\cf10 Csoport\highlight1\cf0  \highlight11\cf10 t\highlight1\cf0 ö\highlight11\cf10 rl\highlight1\cf0 é\highlight11\cf10 se\highlight9\cf8\b ,\highlight1\cf0\b0  \highlight11\cf10 vagy\highlight1\cf0  \highlight11\cf10 ha\highlight1\cf0  \highlight11\cf10 nem\highlight1\cf0  \highlight11\cf10 tal\highlight1\cf0 á\highlight11\cf10 lhat\highlight1\cf0 ó\highlight9\cf8\b ,\highlight1\cf0\b0  \highlight11\cf10 a\highlight1\cf0  \highlight11\cf10 megtal\highlight1\cf0 á\highlight11\cf10 l\highlight1\cf0 á\highlight11\cf10 s\highlight1\cf0 á\highlight11\cf10 nak\highlight1\cf0  \highlight11\cf10 seg\highlight1\cf0 í\highlight11\cf10 t\highlight1\cf0 é\highlight11\cf10 se\highlight1\cf0 \par
+\highlight11\cf10 PROMPT\highlight1\cf0  \highlight11\cf10 Adja\highlight1\cf0  \highlight11\cf10 meg\highlight1\cf0  \highlight11\cf10 a\highlight1\cf0  \highlight11\cf10 csoportot\highlight1\cf0  \highlight11\cf10 egy\highlight1\cf0 é\highlight11\cf10 rtelm\highlight1\cf0 û\highlight11\cf10 en\highlight1\cf0  \highlight11\cf10 meghat\highlight1\cf0 á\highlight11\cf10 roz\highlight1\cf0 ó \highlight11\cf10 tulajdons\highlight1\cf0 á\highlight11\cf10 gokat\highlight9\cf8\b :\highlight1\cf0\b0 \par
+\highlight11\cf10 ACCEPT\highlight1\cf0  \highlight11\cf10 cs_vez\highlight1\cf0  \highlight11\cf10 PROMPT\highlight1\cf0  \highlight7\cf6 'Adja meg csoport vezetõjének a nevét: '\highlight1\cf0 \par
+\highlight11\cf10 ACCEPT\highlight1\cf0  \highlight11\cf10 cs_megnevez\highlight1\cf0 é\highlight11\cf10 s\highlight1\cf0  \highlight11\cf10 PROMPT\highlight1\cf0  \highlight7\cf6 'Adja meg a csoport nevét: '\highlight1\cf0 \par
+\highlight5\cf4\b COLUMN\highlight1\cf0\b0  \highlight11\cf10 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight1\cf0  \highlight5\cf4\b FORMAT\highlight1\cf0\b0  \highlight11\cf10 A20\highlight1\cf0  \highlight11\cf10 HEADING\highlight1\cf0  \highlight7\cf6 'Coport neve'\highlight1\cf0  \highlight11\cf10 JUSTIFY\highlight1\cf0  \highlight11\cf10 CENTER\highlight1\cf0 \par
+\par
+\par
+\highlight5\cf4\b DECLARE\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight5\cf4\b PROCEDURE\highlight1\cf0\b0  \highlight11\cf10 DelCsop\highlight9\cf8\b (\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 cs_vez\highlight1\cf0  \highlight5\cf4\b IN\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight9\cf8 ,\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 cs_megnevez\highlight1\cf0 é\highlight11\cf10 s\highlight1\cf0  \highlight5\cf4\b IN\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight1\cf0\b0 \par
+\tab \highlight9\cf8\b )\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b IS\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b BEGIN\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'törlés...'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \tab \highlight5\cf4\b DELETE\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight1\cf0 \par
+\tab \tab \highlight5\cf4\b WHERE\highlight1\cf0\b0  \highlight11\cf10 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b =\highlight11\cf10\b0 cs_megnevez\highlight1\cf0 é\highlight11\cf10 s\highlight1\cf0  \highlight5\cf4\b AND\highlight1\cf0\b0  \highlight11\cf10 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b =\highlight11\cf10\b0 cs_vez\highlight9\cf8\b ;\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'törlés lezajlott'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \highlight5\cf4\b END\highlight1\cf0\b0  \highlight11\cf10 DelCsop\highlight9\cf8\b ;\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight5\cf4\b PROCEDURE\highlight1\cf0\b0  \highlight11\cf10 SelLikeCsop\highlight9\cf8\b (\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 cs_vez\highlight1\cf0  \highlight5\cf4\b IN\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight9\cf8 ,\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 cs_megnevez\highlight1\cf0 é\highlight11\cf10 s\highlight1\cf0  \highlight5\cf4\b IN\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight1\cf0\b0 \par
+\tab \highlight9\cf8\b )\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b IS\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 csVez\highlight1\cf0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 csNev\highlight1\cf0  \highlight11\cf10 Csoportok\highlight9\cf8\b .\highlight11\cf10\b0 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b %\highlight5\cf4 TYPE\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b BEGIN\highlight1\cf0\b0 \par
+\tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'Azon Csoportok, melyeknek a neve hasonló a keresett kifejezéshez'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 csVez\highlight1\cf0  \highlight9\cf8\b :=\highlight1\cf0\b0  \highlight5\cf4\b UPPER\highlight9\cf8 (\highlight11\cf10\b0 cs_vez\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 csNev\highlight1\cf0  \highlight9\cf8\b :=\highlight1\cf0\b0  \highlight5\cf4\b UPPER\highlight9\cf8 (\highlight11\cf10\b0 cs_megnevez\highlight1\cf0 é\highlight11\cf10 s\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \par
+\tab \tab \highlight5\cf4\b for\highlight1\cf0\b0  \highlight11\cf10 i\highlight1\cf0  \highlight5\cf4\b in\highlight1\cf0\b0  \highlight9\cf8\b (\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight5\cf4\b select\highlight1\cf0\b0  \highlight11\cf10 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b ,\highlight1\cf0\b0  \highlight11\cf10 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b ,\highlight1\cf0\b0  \highlight11\cf10 csoport_pontsz\highlight1\cf0 á\highlight11\cf10 m\highlight1\cf0  \par
+\tab \tab \tab \highlight5\cf4\b from\highlight1\cf0\b0  \highlight11\cf10 Csoportok\highlight1\cf0  \par
+\tab \tab \tab \highlight5\cf4\b where\highlight1\cf0\b0  \highlight5\cf4\b UPPER\highlight9\cf8 (\highlight11\cf10\b0 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b )\highlight1\cf0\b0  \highlight5\cf4\b LIKE\highlight1\cf0\b0  \highlight7\cf6 '%'\highlight9\cf8\b ||\highlight1\cf0\b0  \highlight11\cf10 csVez\highlight1\cf0  \highlight9\cf8\b ||\highlight7\cf6\b0 '%'\highlight1\cf0  \highlight5\cf4\b and\highlight1\cf0\b0  \highlight5\cf4\b UPPER\highlight9\cf8 (\highlight11\cf10\b0 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b )\highlight1\cf0\b0  \highlight5\cf4\b LIKE\highlight1\cf0\b0  \highlight7\cf6 '%'\highlight9\cf8\b ||\highlight1\cf0\b0  \highlight11\cf10 csNev\highlight1\cf0  \highlight9\cf8\b ||\highlight7\cf6\b0 '%'\highlight1\cf0 \par
+\tab \tab \highlight9\cf8\b )\highlight1\cf0\b0 \par
+\tab \tab \highlight5\cf4\b loop\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 new_line\highlight9\cf8\b ;\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'Csoport neve'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight11\cf10\b0 i\highlight9\cf8\b .\highlight11\cf10\b0 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'Csoportvezetõ neve'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight11\cf10\b0 i\highlight9\cf8\b .\highlight11\cf10\b0 csoportvezet\highlight1\cf0 õ\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'Csoport pontszáma'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight11\cf10\b0 i\highlight9\cf8\b .\highlight11\cf10\b0 csoport_pontsz\highlight1\cf0 á\highlight11\cf10 m\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 '---------------------------------------------'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \tab \highlight5\cf4\b end\highlight1\cf0\b0  \highlight5\cf4\b loop\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\tab \tab \par
+\tab \highlight5\cf4\b END\highlight1\cf0\b0  \highlight11\cf10 SelLikeCsop\highlight9\cf8\b ;\highlight1\cf0\b0 \par
+\tab \par
+\tab \par
+\highlight5\cf4\b BEGIN\highlight1\cf0\b0 \par
+\tab \par
+\tab \highlight5\cf4\b if\highlight1\cf0\b0  \highlight11\cf10 L\highlight1\cf0 é\highlight11\cf10 tez\highlight1\cf0 õ\highlight11\cf10 Csoport\highlight9\cf8\b (\highlight7\cf6\b0 'a'\highlight9\cf8\b ,\highlight7\cf6\b0 's'\highlight9\cf8\b )\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b then\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'törlés!'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b else\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 DBMS_OUTPUT\highlight9\cf8\b .\highlight11\cf10\b0 PUT_LINE\highlight9\cf8\b (\highlight7\cf6\b0 'select'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b end\highlight1\cf0\b0  \highlight5\cf4\b if\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\par
+\tab \highlight5\cf4\b if\highlight1\cf0\b0  \highlight11\cf10 L\highlight1\cf0 é\highlight11\cf10 tez\highlight1\cf0 õ\highlight11\cf10 Csoport\highlight9\cf8\b (\highlight7\cf6\b0 '&cs_vez'\highlight9\cf8\b ,\highlight7\cf6\b0 '&cs_megnevezés'\highlight9\cf8\b )\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b then\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 DelCsop\highlight9\cf8\b (\highlight7\cf6\b0 '&cs_vez'\highlight9\cf8\b ,\highlight7\cf6\b0 '&cs_megnevezés'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b else\highlight1\cf0\b0 \par
+\tab \tab \highlight11\cf10 SelLikeCsop\highlight9\cf8\b (\highlight7\cf6\b0 '&cs_vez'\highlight9\cf8\b ,\highlight7\cf6\b0 '&cs_megnevezés'\highlight9\cf8\b );\highlight1\cf0\b0 \par
+\tab \highlight5\cf4\b end\highlight1\cf0\b0  \highlight5\cf4\b if\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\tab \par
+\highlight5\cf4\b END\highlight9\cf8 ;\highlight1\cf0\b0 \par
+\highlight9\cf8\b /\highlight1\cf0\b0 \par
+\par
+\highlight5\cf4\b COLUMN\highlight1\cf0\b0  \highlight11\cf10 csoport_n\highlight1\cf0 é\highlight11\cf10 v\highlight1\cf0  \highlight11\cf10 CLEAR}

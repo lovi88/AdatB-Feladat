@@ -1,5 +1,4 @@
---csoport_kiv_atlag
-
+--@csoport_kiv_atlag
 SET verify OFF
 SET LINESIZE 70
 SET PAGESIZE 10
@@ -23,3 +22,5 @@ having UPPER(csoportvezetõ) = UPPER('&csoportvezetõ');
 TTITLE OFF
 BTITLE OFF
 CLEAR COLUMNS
+
+UNDEFINE csoportvezetõ

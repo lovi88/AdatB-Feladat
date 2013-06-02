@@ -113,58 +113,73 @@ cl scr
 --SPOOL OFF
 
 
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\ház_tehermentesítõ.txt
+--@@ház_tehermentesítõ
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_lista.txt
+--@@csoport_lista
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_új.txt
+--@@csoport_új
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_mód.txt
+--@@csoport_mód
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_töröl.txt
+--@@csoport_töröl
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_kiv_atlag.txt
+--@@csoport_kiv_atlag
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_elsõ_öt.txt
+--@@csoport_elsõ_öt
+--SPOOL OFF
+
+
+--cl scr
+--@@csoport_lista
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_ins_up_1.txt
+--@@csoport_pl_ins_up
+--SPOOL OFF
+
+--cl scr
+--@@csoport_lista
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_ins_up_2.txt
+--@@csoport_pl_ins_up
+--SPOOL OFF
+
+
 cl scr
-SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\ház_tehermentesítõ.txt
-@@ház_tehermentesítõ
+@@csoport_lista
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_1.txt
+@@csoport_pl_del_sel
 SPOOL OFF
---
---
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
---
---
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
 
 
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
+cl scr
+@@csoport_lista
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_2.txt
+@@csoport_pl_del_sel
+SPOOL OFF
 
 
 --cl scr

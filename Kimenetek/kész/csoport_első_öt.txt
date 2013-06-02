@@ -1,0 +1,20 @@
+
+A nézet létrejött.
+
+
+V.  Jún.   02                                                 lap    1
+                          Csoportok listálya
+
+   SORSZÁM     Coport neve       Csoportvezetõ neve  Coport pontszáma 
+---------- -------------------- -------------------- ---------------- 
+         1 Oracle               Scott                          9999.9 
+         2 Gumikacsa            Yuri Black                     6380.4 
+         3 Manók                Kip Mack                       5053.6 
+         4 Krumplipucolók       Shirly Logan                   5006.4 
+         5 Cimborák             Steven Wallace                 4852.6 
+
+
+     Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+5 sor kijelölve.
+
