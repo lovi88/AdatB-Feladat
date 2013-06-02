@@ -63,6 +63,11 @@ begin
 	WHERE csoportvezetõ = cs_vez
 	GROUP BY csoportvezetõ;
 	
+	EXCEPTION
+	WHEN NO_DATA_FOUND 
+		THEN 
+			szam:=0;
+		
 	return szam;
 end;
 /
@@ -78,13 +83,13 @@ is
 	szam NUMBER;
 begin
 
-	SELECT count(csoportvezetõ)
+	SELECT count(*)
 	INTO szam
 	FROM Csoportok
-	WHERE csoportvezetõ = cs_vez and csoport_név = cs_megnevezés
-	GROUP BY csoportvezetõ;
+	WHERE csoportvezetõ = cs_vez and csoport_név = cs_megnevezés;
 	
-	if szam >= 0
+	
+	if szam > 0
 	then
 		return true;
 	end if;

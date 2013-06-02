@@ -24,27 +24,31 @@ ACCEPT cs_pontszam NUMBER PROMPT 'pontszám: '
 DECLARE
 	pontszám_tartomány_hiba EXCEPTION;
 	
+	cs_vez Csoportok.csoportvezetõ%TYPE;
+	cs_megnevezés Csoportok.csoport_név%TYPE;
+	
+	
 	PROCEDURE Ins(
-					cs_vez IN Csoportok.csoportvezetõ%TYPE,
-					cs_megnevezés IN Csoportok.csoport_név%TYPE
-				)
+		cs_vez IN Csoportok.csoportvezetõ%TYPE,
+		cs_megnevezés IN Csoportok.csoport_név%TYPE
+	)
 	IS
 	BEGIN
 		INSERT INTO Csoportok 
 			(csoport_név, csoportvezetõ)
 		VALUES
 			(
-				'cs_megnevezés',
-				'&cs_vez'
+				cs_megnevezés,
+				cs_vez
 			)
 		;
 	END Ins;
 	
 	PROCEDURE UpdatePontszám(
-					cs_megnevezés IN Csoportok.csoport_név%TYPE,
-					cs_vez IN Csoportok.csoportvezetõ%TYPE,
-					ujÉrték IN Csoportok.csoport_pontszám%TYPE
-				)
+		cs_vez IN Csoportok.csoportvezetõ%TYPE,
+		cs_megnevezés IN Csoportok.csoport_név%TYPE,
+		ujÉrték IN Csoportok.csoport_pontszám%TYPE
+	)
 	IS
 	BEGIN
 	
@@ -55,77 +59,110 @@ DECLARE
 	
 	
 		UPDATE Csoportok SET csoport_pontszám=ujÉrték
-		WHERE csoport_név='cs_megnevezés' AND csoportvezetõ='cs_vez';
+		WHERE csoport_név=cs_megnevezés AND csoportvezetõ=cs_vez;
 	END UpdatePontszám;
 
 	PROCEDURE UpdateVezetõ(
-					cs_megnevezés IN Csoportok.csoport_név%TYPE,
-					cs_vez IN Csoportok.csoportvezetõ%TYPE,
-					ujÉrték IN Csoportok.csoportvezetõ%TYPE
-				)
+		cs_vez IN Csoportok.csoportvezetõ%TYPE,
+		cs_megnevezés IN Csoportok.csoport_név%TYPE,
+		ujÉrték IN Csoportok.csoportvezetõ%TYPE
+	)
 	IS
 	BEGIN
-		UPDATE Csoportok SET csoportvezetõ='ujÉrték'
-		WHERE csoport_név='cs_megnevezés' AND csoportvezetõ='cs_vez';
+		UPDATE Csoportok SET csoportvezetõ=ujÉrték
+		WHERE csoport_név=cs_megnevezés AND csoportvezetõ=cs_vez;
 	END UpdateVezetõ;
 	
 	PROCEDURE UpdateCsoportNév(
-					cs_megnevezés IN Csoportok.csoport_név%TYPE,
-					cs_vez IN Csoportok.csoportvezetõ%TYPE,
-					ujÉrték IN Csoportok.csoport_név%TYPE
-				)
+		cs_vez IN Csoportok.csoportvezetõ%TYPE,
+		cs_megnevezés IN Csoportok.csoport_név%TYPE,
+		ujÉrték IN Csoportok.csoport_név%TYPE)
 	IS
 	BEGIN
-		UPDATE Csoportok SET csoport_név='ujÉrték'
-		WHERE csoport_név='cs_megnevezés' AND csoportvezetõ='cs_vez';
+		UPDATE Csoportok SET csoport_név=ujÉrték
+		WHERE csoport_név=cs_megnevezés AND csoportvezetõ=cs_vez;
 	END UpdateCsoportNév;
 
+	
+	
 	PROCEDURE Main(
-					cs_megnevezés IN OUT Csoportok.csoport_név%TYPE,
-					cs_vez IN OUT Csoportok.csoportvezetõ%TYPE,
-					cs_pontszam IN Csoportok.csoport_pontszám%TYPE
-				)
+		cs_vez				IN OUT	Csoportok.csoportvezetõ%TYPE,
+		cs_vez_új			IN		Csoportok.csoportvezetõ%TYPE,
+		cs_megnevezés		IN OUT	Csoportok.csoport_név%TYPE,
+		cs_megnevezés_új	IN		Csoportok.csoport_név%TYPE,
+		cs_pontszam			IN		Csoportok.csoport_pontszám%TYPE
+	)
 	IS
+		pontszam Csoportok.csoport_pontszám%TYPE;
 	BEGIN
-			if LétezõCsoport(cs_vez,cs_megnevezés) then
-				
-				if cs_vez != cs_vez_új
-				then
-					UpdateVezetõ(cs_vez,cs_megnevezés,cs_vez_új);
-					cs_vez := cs_vez_új;
-				end if;
-				
-				if cs_megnevezés != cs_megnevezés_új
-				then
-					UpdateCsoportNév(cs_vez,cs_megnevezés,cs_megnevezés_új);
-					cs_megnevezés := cs_megnevezés_új;
-				end if;
-				
-				UpdatePontszám(cs_pontszam);
-				
-			else	
-				Ins(cs_vez,cs_megnevezés);
-				
-				if &cs_pontszam >= 0
-				then
-					UpdatePontszám(cs_vez,cs_megnevezés,cs_pontszam);
-				end if;
-				
+		DBMS_OUTPUT.PUT_LINE('main');			
+		DBMS_OUTPUT.PUT_LINE(cs_vez);
+		DBMS_OUTPUT.PUT_LINE(cs_vez_új);
+		DBMS_OUTPUT.PUT_LINE(cs_megnevezés);
+		DBMS_OUTPUT.PUT_LINE(cs_megnevezés_új);
+		DBMS_OUTPUT.PUT_LINE(cs_pontszam);
+
+		if LétezõCsoport(cs_vez,cs_megnevezés) 
+		then
+			DBMS_OUTPUT.PUT_LINE('Létezõ csoport szerkesztése...');
+			
+			if cs_vez != cs_vez_új
+			then
+				UpdateVezetõ(cs_vez,cs_megnevezés,cs_vez_új);
+				cs_vez := cs_vez_új;
+				DBMS_OUTPUT.PUT_LINE('vezetõ átírása...');
 			end if;
+			
+			if cs_megnevezés != cs_megnevezés_új
+			then
+				UpdateCsoportNév(cs_vez,cs_megnevezés,cs_megnevezés_új);
+				cs_megnevezés := cs_megnevezés_új;
+				DBMS_OUTPUT.PUT_LINE('csoportnév átírása...');
+			end if;
+			
+			
+			SELECT csoport_pontszám
+			INTO pontszam
+			FROM Csoportok
+			WHERE csoport_név=cs_megnevezés AND csoportvezetõ=cs_vez;
+			
+			if pontszam != cs_pontszam
+			then
+				UpdatePontszám(cs_vez,cs_megnevezés,cs_pontszam);
+				DBMS_OUTPUT.PUT_LINE('pontszám átírása...');
+			end if;
+			
+			
+		else	
+			DBMS_OUTPUT.PUT_LINE('új sor létrejött...');
+			Ins(cs_vez,cs_megnevezés);
+			
+			
+			if cs_pontszam >= 0
+			then
+				UpdatePontszám(cs_vez,cs_megnevezés,cs_pontszam);
+				DBMS_OUTPUT.PUT_LINE('pontszám átírása...');
+			end if;
+			
+		end if;
+		
+		
 	END Main;
 	
 	
-	cs_megnevezés IN Csoportok.csoport_név%TYPE;
-	cs_vez IN Csoportok.csoportvezetõ%TYPE;
-	
-	még CHAR;
 	
 BEGIN
-	cs_megnevezés := &cs_megnevezés;
-	cs_vez := &cs_vez;
+	cs_megnevezés := '&cs_megnevezés';
+	cs_vez := '&cs_vez';
 	
-	Main(cs_vez,cs_megnevezés,cs_pontszam);
+	Main(cs_vez,'&cs_vez_új',cs_megnevezés,'&cs_megnevezés',&cs_pontszam);
 
+	EXCEPTION
+	WHEN pontszám_tartomány_hiba
+		THEN DBMS_OUTPUT.PUT_LINE('a pontszámnak 0 és 9999.9 közé kell esnie');
+	WHEN NO_DATA_FOUND 
+		THEN DBMS_OUTPUT.PUT_LINE('csoport nem található, helytelen állapot, a pontszám lekérdezésekor...');
+	
 END;
 /
 
