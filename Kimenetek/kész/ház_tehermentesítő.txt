@@ -1,0 +1,47 @@
+
+A nézet létrejött.
+
+
+A nézet létrejött.
+
+
+A mentési pont létrejött.
+
+
+  HÁZ_SZÁM FÉRÕHELY_SZÁM   LAKÓSZÁM SZABAD_HELYEK           
+---------- ------------- ---------- -------------           
+         5            30          2            28           
+         2            20          5            15           
+         8            15          5            10           
+        10            10          1             9           
+         1            10          4             6           
+         6             5          6            -1           
+         7            10          9             1           
+         4            12          6             6           
+         9            40          3            37           
+         3            15          9             6           
+
+10 sor kijelölve.
+
+
+A PL/SQL eljárás sikeresen befejezõdött.
+
+Nincsenek hibák.
+
+  HÁZ_SZÁM FÉRÕHELY_SZÁM   LAKÓSZÁM SZABAD_HELYEK           
+---------- ------------- ---------- -------------           
+         5            30         11            19           
+         2            20         11             9           
+         8            15          5            10           
+        10            10          1             9           
+         1            10          4             6           
+         4            12          6             6           
+         9            40          3            37           
+         3            15          9             6           
+
+8 sor kijelölve.
+
+visszaállítja(v) vagy elfogadja(e) a változtatást: v
+
+A PL/SQL eljárás sikeresen befejezõdött.
+

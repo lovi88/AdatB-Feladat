@@ -1,0 +1,16 @@
+Táborhely Üzemeltetõ Adatbázis Adminisztrátori almenû
+
+******************************************************************
+*  Új oszlop hozzáadása            (ddl_oszlop_új)               *
+*  Oszlop módosítása               (ddl_oszlop_mod)              *
+*  Oszlopok logikai törlése        (ddl_oszlop_del_logic)        *
+*  Oszlopok törlések véglegesítése (ddl_oszlop_del_logic_finish) *
+*  Oszlopok fizikai törlése        (ddl_oszlop_del_fizik)        *
+*  Oszlop átnevezés                (ddl_oszlop_ren)              *
+*  Tábla átnevezés                 (ddl_tábla_átnevez)           *
+*  Tábla törlése                   (ddl_tábla_töröl)             *
+*  Megszorítás hozzáadása          (ddl_constraint_új)           *
+*  Megszorítás megváltoztatása     (ddl_constraint_mod)          *
+*  Megszorítás törlés              (ddl_constraint_töröl)        *
+******************************************************************
+A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: ddl_oszlop_új

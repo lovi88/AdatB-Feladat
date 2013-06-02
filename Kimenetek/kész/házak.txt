@@ -1,0 +1,15 @@
+Táborhely Üzemeltetõ: Házak almenû
+
+******************************************************************
+*  Házak listázása                      (ház_lista)              *
+*  Új ház felvétele                     (ház_új)                 *
+*  Ház módosítása                       (ház_mód)                *
+*  Ház törlése                          (ház_töröl)              *
+*  Házankénti lakóbeosztás              (ház_lakó_lista)         *
+*  Házankénti lakóbeosztás (elsõ 3 ház) (ház_lakó_lista_elsõk)   *
+*  Házankénti telítettség               (ház_tel)                *
+*                                                                *
+*  Szinte betelt házak tehermentesítése (ház_tehermentesítõ)     *
+*                                                                *
+******************************************************************
+A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: ház_lista

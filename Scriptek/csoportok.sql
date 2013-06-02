@@ -1,19 +1,18 @@
 
-PROMPT TÃ¡borhely ÃœzemeltetÅ‘: Csoportok almenÅ±
+PROMPT Táborhely Üzemeltetõ: Csoportok almenû
 PROMPT
 PROMPT *****************************************************************
-PROMPT *  Csoportok listÃ¡zÃ¡sa                  (csoport_lista)         *
-PROMPT *  Ãšj Csoport felvÃ©tele                 (csoport_Ãºj)            *
-PROMPT *  Csoport mÃ³dosÃ­tÃ¡sa                   (csoport_mÃ³d)           *
-PROMPT *  Csoport tÃ¶rlÃ©se                      (csoport_tÃ¶rÃ¶l)         *
+PROMPT *  Csoportok listázása                  (csoport_lista)         *
+PROMPT *  Új Csoport felvétele                 (csoport_új)            *
+PROMPT *  Csoport módosítása                   (csoport_mód)           *
+PROMPT *  Csoport törlése                      (csoport_töröl)         *
 PROMPT *                                                               *
-PROMPT *  KivÃ¡lasztott csoportvezetÅ‘ Ã¡tlaga    (csoport_kiv_atlag)     *
-PROMPT *  Az elsÅ‘ Ã¶t csoport                   (csoport_elsÅ‘_Ã¶t)       *
+PROMPT *  Kiválasztott csoportvezetõ átlaga    (csoport_kiv_atlag)     *
+PROMPT *  Az elsõ öt csoport                   (csoport_elsõ_öt)       *
 PROMPT *                                                               *
-PROMPT *                                                               *
-PROMPT *  Ãšj csoport / csoport mÃ³dosÃ­tÃ¡s       (csoport_pl_ins_up)     *
-PROMPT *  Csoport tÃ¶rÃ¶l / KilistÃ¡z             (csoport_pl_del_sel)    *
+PROMPT *  Új csoport / csoport módosítás       (csoport_pl_ins_up)     *
+PROMPT *  Csoport töröl / Kilistáz             (csoport_pl_del_sel)    *
 PROMPT *****************************************************************
 
-ACCEPT al PROMPT 'A kÃ­vÃ¡nt almenÅ± elÃ©rÃ©sÃ©hez Ã­rjon be, egy a zÃ¡rÃ³jelekben lÃ©vÅ‘ szÃ³t:'
+ACCEPT al PROMPT 'A kívánt almenû eléréséhez írjon be, egy a zárójelekben lévõ szót: '
 @@ &al

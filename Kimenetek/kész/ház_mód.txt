@@ -1,0 +1,7 @@
+Ház módosítása
+Melyik számú házat kívánja módosítani: 99
+Melyik oszlopot kívánja módosítani (ház_szám|ház_megnevezés|férõhely_szám):férõhely_szám
+adja meg az értéket, amire átírja: 77
+
+1 sor módosítva.
+

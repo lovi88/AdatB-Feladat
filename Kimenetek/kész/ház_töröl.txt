@@ -1,0 +1,4 @@
+Ház Törlése
+Melyik számú házat kívánja törölni: 99
+
+1 sor törölve.

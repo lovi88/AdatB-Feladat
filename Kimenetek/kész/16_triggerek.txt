@@ -1,0 +1,88 @@
+
+A nézet létrejött.
+
+drop trigger HázBeteltTrigger
+*
+Hiba a(z) 1. sorban:
+ORA-04080: 'HÁZBETELTTRIGGER' trigger nem létezik 
+
+
+create or replace trigger HázBeteltTrigger
+                          *
+Hiba a(z) 1. sorban:
+ORA-04089: nem lehet triggereket létrehozni a SYS felhasználó objektumain 
+
+
+
+A nézet létrejött.
+
+drop trigger TúlSokCsoportjaLenne
+*
+Hiba a(z) 1. sorban:
+ORA-04080: 'TÚLSOKCSOPORTJALENNE' trigger nem létezik 
+
+
+create or replace trigger TúlSokCsoportjaLenne
+                          *
+Hiba a(z) 1. sorban:
+ORA-04089: nem lehet triggereket létrehozni a SYS felhasználó objektumain 
+
+
+Nincsenek hibák.
+
+A tábla eldobva.
+
+
+A tábla létrejött.
+
+
+A tábla módosítva.
+
+
+A tábla eldobva.
+
+
+A tábla létrejött.
+
+DROP TRIGGER CsoportArhiválóHelp
+*
+Hiba a(z) 1. sorban:
+ORA-04080: 'CSOPORTARHIVÁLÓHELP' trigger nem létezik 
+
+
+create or replace trigger CsoportArhiválóHelp
+                          *
+Hiba a(z) 1. sorban:
+ORA-04089: nem lehet triggereket létrehozni a SYS felhasználó objektumain 
+
+
+Nincsenek hibák.
+
+A nézet létrejött.
+
+DROP TRIGGER ÁtlagonFelüliCsoportArhiváló
+*
+Hiba a(z) 1. sorban:
+ORA-04080: 'ÁTLAGONFELÜLICSOPORTARHIVÁLÓ' trigger nem létezik 
+
+
+create or replace trigger ÁtlagonFelüliCsoportArhiváló
+                          *
+Hiba a(z) 1. sorban:
+ORA-04089: nem lehet triggereket létrehozni a SYS felhasználó objektumain 
+
+
+Nincsenek hibák.
+DROP TRIGGER tiltás
+*
+Hiba a(z) 1. sorban:
+ORA-04080: 'TILTÁS' trigger nem létezik 
+
+
+CREATE OR REPLACE TRIGGER tiltás
+                          *
+Hiba a(z) 1. sorban:
+ORA-04089: nem lehet triggereket létrehozni a SYS felhasználó objektumain 
+
+
+Nincsenek hibák.

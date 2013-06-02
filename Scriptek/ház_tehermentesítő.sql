@@ -1,39 +1,38 @@
---ház_tehermentesítõ
+--@ház_tehermentesítõ
 
 --a közel betelt házakból átteszük a lakókat egy nagyobba, ha tudjuk
 --végül commit/rollback
 
-
-create or replace view ház_lakó
-as
+CREATE OR REPLACE VIEW ház_lakó
+AS
 SELECT
 	Házak.ház_szám,
-	count(Egészségbiztosítási_szám) as Lakószám
+	COUNT(Egészségbiztosítási_szám) as Lakószám
 FROM  Házak, Lakók
 WHERE Házak.ház_szám = Lakók.ház_szám
 GROUP BY Házak.ház_szám;
 
 
-create or replace view ház_leterheltseg_nezet
-as
+CREATE OR REPLACE VIEW ház_leterheltseg_nezet
+AS
 SELECT 
 	Házak.ház_szám,
 	férõhely_szám,
 	Lakószám,
-	férõhely_szám - Lakószám as szabad_helyek
+	férõhely_szám - Lakószám AS szabad_helyek
 FROM  Házak, ház_lakó
 WHERE ház_lakó.ház_szám = Házak.ház_szám;
 
-SAVEPOINT tehrementesit;
+SAVEPOINT tehermentesit;
 
-select * from ház_leterheltseg_nezet;
+SELECT * FROM ház_leterheltseg_nezet;
 
 DECLARE
 	seged_ház_szám NUMBER;
 BEGIN
 	for i IN
 	(
-		select * FROM ház_leterheltseg_nezet WHERE szabad_helyek < férõhely_szám/5
+		SELECT * FROM ház_leterheltseg_nezet WHERE szabad_helyek < férõhely_szám/5
 	)
 	loop
 		begin
@@ -48,7 +47,7 @@ BEGIN
 				)
 			WHERE s = 1;
 			
-			update Lakók set ház_szám = seged_ház_szám
+			UPDATE Lakók SET ház_szám = seged_ház_szám
 			WHERE ház_szám = i.ház_szám;
 			
 			EXCEPTION
@@ -62,8 +61,7 @@ END;
 
 SHOW ERRORS
 
-select * from ház_leterheltseg_nezet;
-
+SELECT * FROM ház_leterheltseg_nezet;
 
 ACCEPT vissza PROMPT 'visszaállítja(v) vagy elfogadja(e) a változtatást: '
 
@@ -71,9 +69,10 @@ BEGIN
 	IF '&vissza'='e' THEN
 		commit;
 	ELSE
-		ROLLBACK TO tehrementesit;
+		ROLLBACK TO tehermentesit;
 	END IF;
 		
 END;
 /
 
+UNDEFINE vissza

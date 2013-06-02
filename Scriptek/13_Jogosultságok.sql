@@ -1,8 +1,9 @@
+--@13_Jogosultságok
+
 CONNECT sys/rendszergazda AS SYSDBA
 cl scr
 --szerepkörök CampAdmin; CampBoss
 --alkalmazottak: Admin1; Admin2 - Boss1; Boss2
---13_Jogosultságok
 
 DROP USER Admin1 CASCADE;
 DROP USER Admin2 CASCADE;

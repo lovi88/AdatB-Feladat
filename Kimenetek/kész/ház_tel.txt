@@ -1,0 +1,26 @@
+
+A nézet létrejött.
+
+
+                   Házankénti telítettség                   
+============================================================
+                                                            
+                                                            
+  HÁZ_SZÁM FÉRÕHELYEK   LAKÓSZÁM Szabad Helyek              
+---------- ---------- ---------- -------------              
+         5         30          2            28              
+         2         20          5            15              
+         8         15          5            10              
+        10         10          1             9              
+         1         10          4             6              
+         6          5          6            -1              
+         7         10          9             1              
+         4         12          6             6              
+         9         40          3            37              
+         3         15          9             6              
+
+
+Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+10 sor kijelölve.
+

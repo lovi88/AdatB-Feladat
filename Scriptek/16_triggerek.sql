@@ -1,3 +1,5 @@
+--@16_triggerek
+
 
 CREATE or replace view LakóNézet as
 select * from Lakók;
@@ -53,7 +55,6 @@ end;
 SHOW ERRORS
 
 
-
 DROP TABLE CsoportokArch;
 CREATE TABLE CsoportokArch(
 	ArhiválásIdeje		DATE,
@@ -64,11 +65,31 @@ CREATE TABLE CsoportokArch(
 
 ALTER TABLE CsoportokArch ADD CONSTRAINTS p_CsoportokArch PRIMARY KEY (csoport_név,csoportvezetõ,ArhiválásIdeje);
 
+
+DROP TABLE csop_puffer;
+CREATE TABLE csop_puffer 
+AS SELECT * FROM Csoportok;
+
+--mutating table error ellen
+DROP TRIGGER CsoportArhiválóHelp;
+create or replace trigger CsoportArhiválóHelp
+before delete on Csoportok
+begin
+	
+	DELETE FROM csop_puffer;
+	INSERT INTO csop_puffer (csoport_név,csoportvezetõ,csoport_pontszám)
+	SELECT csoport_név,csoportvezetõ,csoport_pontszám FROM Csoportok;
+end;
+/
+SHOW ERRORS
+
+
+
+
 create or replace view CsoportokÁtlag
 as
 select round(avg(NVL(csoport_pontszám,0)),0) as atlag
-from Csoportok;
-
+from csop_puffer;
 
 
 DROP TRIGGER ÁtlagonFelüliCsoportArhiváló;
@@ -105,6 +126,7 @@ end;
 /
 SHOW ERRORS
 
+
 DROP TRIGGER tiltás;
 CREATE OR REPLACE TRIGGER tiltás
 BEFORE DELETE OR INSERT OR UPDATE ON Házak
@@ -116,4 +138,3 @@ BEGIN
 END;
 /
 SHOW ERRORS
-
