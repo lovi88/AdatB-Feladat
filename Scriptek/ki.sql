@@ -168,102 +168,102 @@ cl scr
 --SPOOL OFF
 
 
+--cl scr
+--@@csoport_lista
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_1.txt
+--@@csoport_pl_del_sel
+--SPOOL OFF
+--
+--
+--cl scr
+--@@csoport_lista
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_2.txt
+--@@csoport_pl_del_sel
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_lista.txt
+--@@Lakó_lista
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_új.txt
+--@@Lakó_új
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_mód.txt
+--@@Lakó_mód
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_töröl.txt
+--@@Lakó_töröl
+--SPOOL OFF
+
+
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_lista_nem.txt
+--@@Lakó_lista_nem
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_lista_háznélkül.txt
+--@@Lakó_lista_háznélkül
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_lista_résznév.txt
+--@@Lakó_lista_résznév
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_nem_átlagéletkor.txt
+--@@Lakó_nem_átlagéletkor
+--SPOOL OFF
+--
+--
+--cl scr
+--SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_sum_tizennyolc_alatt.txt
+--@@Lakó_sum_tizennyolc_alatt
+--SPOOL OFF
+
+
 cl scr
-@@csoport_lista
-SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_1.txt
-@@csoport_pl_del_sel
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_Legnagyobb_házak.txt
+@@Lakó_Legnagyobb_házak
 SPOOL OFF
 
 
 cl scr
-@@csoport_lista
-SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\csoport_pl_del_sel_2.txt
-@@csoport_pl_del_sel
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_Legfiatalabb_ALL.txt
+@@Lakó_Legfiatalabb_ALL
 SPOOL OFF
 
 
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
+cl scr
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_legfiatalabb_maxxal.txt
+@@Lakó_legfiatalabb_maxxal
+SPOOL OFF
 
 
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
+cl scr
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_legidõsebb_minnel.txt
+@@Lakó_legidõsebb_minnel
+SPOOL OFF
 
 
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
-
-
---cl scr
---SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\.txt
---@@
---SPOOL OFF
+cl scr
+SPOOL C:\oracle\product\10.2.0\db_1\BIN\AdatB-Feladat\Kimenetek\Lakó_legidõsebb_ANY.txt
+@@Lakó_legidõsebb_ANY
+SPOOL OFF
 
 
 --cl scr

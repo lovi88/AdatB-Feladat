@@ -3,6 +3,8 @@ PROMPT Törölni kívánt Lakó kijelölése
 ACCEPT Név PROMPT 'Lakó neve: '
 ACCEPT Egészségbiztosítási_szám PROMPT 'Lakó Egészségbiztosítási száma: '
 
-
 DELETE FROM Lakók
-WHERE Egészségbiztosítási_szám=&Egészségbiztosítási_szám AND Név=&Név;
+WHERE Egészségbiztosítási_szám='&Egészségbiztosítási_szám' AND Név='&Név';
+
+UNDEFINE Név
+UNDEFINE Egészségbiztosítási_szám

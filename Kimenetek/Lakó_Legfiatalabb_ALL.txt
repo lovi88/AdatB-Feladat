@@ -1,0 +1,16 @@
+
+                                         A legfiatalabb lakó                                        
+                                        ====================                                        
+                                                                                                    
+                                                                                                    
+                      Egészség-                        Személy-                                     
+                     biztosítási    Születési         igazolvány                                    
+        Neve            szám          dátum      Neme    szám                                       
+-------------------- ----------- --------------- ---- ----------                                    
+Marco Cantrell       778512315   2005-02-22      f    958646JA                                      
+                                                                                                    
+                                                                                                    
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+1 sor kijelölve.
+

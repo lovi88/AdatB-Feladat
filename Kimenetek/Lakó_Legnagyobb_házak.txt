@@ -1,0 +1,38 @@
+
+A nézet létrejött.
+
+
+                      Egészség-                           Személy-                                  
+                     biztosítási            Születési    igazolvány                                 
+        Neve            szám     Házszám      dátum         szám                                    
+-------------------- ----------- ------- --------------- ----------                                 
+Jessie Frye          952134827         9 1992-10-02      095651HA                                   
+                                                                                                    
+                                                                                                    
+Leo Greer            294386949         9 1992-08-28      448656GA                                   
+                                                                                                    
+                                                                                                    
+Rae Goff             470591241         2 2000-10-15      142285FA                                   
+                                                                                                    
+                                                                                                    
+Corina Head          827416495         2 1995-10-22      959692HA                                   
+                                                                                                    
+                                                                                                    
+Liza Winters         565402276         2 1992-01-19      062684BA                                   
+                                                                                                    
+                                                                                                    
+Marcelino Carroll    051884531         2 1997-05-16      562774JA                                   
+                                                                                                    
+                                                                                                    
+Teressa Chan         915242705         5 1999-09-14      922577JA                                   
+                                                                                                    
+                                                                                                    
+Lesley Snow          236557659         9 1995-03-31      791825KA                                   
+                                                                                                    
+                                                                                                    
+Oma Albert           033187800         2 1996-05-15      088296CA                                   
+                                                                                                    
+                                                                                                    
+
+9 sor kijelölve.
+

@@ -1,0 +1,16 @@
+
+                                          A legidõsebb lakó                                         
+                                        ====================                                        
+                                                                                                    
+                                                                                                    
+                      Egészség-                                                                     
+                     biztosítási    Születési                                                       
+        Neve            szám          dátum      Neme SZEMÉLYIGAZ                                   
+-------------------- ----------- --------------- ---- -----------                                   
+Assunta Holman       214782455   1988-04-29      f    284700GA                                      
+
+
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+1 sor kijelölve.
+

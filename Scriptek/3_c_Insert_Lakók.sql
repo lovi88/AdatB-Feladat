@@ -25,7 +25,7 @@ VALUES
 		'2006-09-22',
 		'2012-11-14',
 		'Solomon Islands',
-		5,
+		null,
 		'Madarak',
 		'Tanner Daniels'
 	)

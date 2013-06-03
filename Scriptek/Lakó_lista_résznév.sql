@@ -1,7 +1,6 @@
-SET LINESIZE 150
-SET PAGESIZE 20
-
-set verify on
+--@Lakó_lista_résznév
+SET LINESIZE 100
+SET PAGESIZE 25
 
 ACCEPT résszó PROMPT 'Adja meg a keresett résszót: '
 
@@ -15,9 +14,6 @@ COLUMN Egészségbiztosítási_szám FORMAT A11 HEADING 'Egészség-|biztosítási|szám' 
 COLUMN SzületésiDátum			FORMAT A14 HEADING 'Születési|dátum' JUSTIFY CENTER
 COLUMN Nem						FORMAT A4 HEADING 'Neme' JUSTIFY CENTER
 COLUMN Személyigazolvány_szám	FORMAT A10 HEADING 'Személy-|igazolvány|szám' JUSTIFY CENTER
-COLUMN Tartózkodas_tól			FORMAT A13 HEADING 'Tartózkodás|kezdete' JUSTIFY CENTER
-COLUMN Tartózkodas_ig			FORMAT A13 HEADING 'Tartózkodás|vége' JUSTIFY CENTER
-COLUMN Ország					FORMAT A15 HEADING 'Ország' JUSTIFY CENTER
 
 
 SELECT
@@ -25,10 +21,7 @@ SELECT
 	Egészségbiztosítási_szám,
 	SzületésiDátum,
 	Nem,
-	Személyigazolvány_szám,
-	Tartózkodas_tól,
-	Tartózkodas_ig,
-	Ország
+	Személyigazolvány_szám
 FROM Lakók
 WHERE Név LIKE '%&résszó%'
 ORDER BY Név,Ország,Nem;
@@ -36,3 +29,5 @@ ORDER BY Név,Ország,Nem;
 TTITLE OFF
 BTITLE OFF
 CLEAR COLUMNS
+
+UNDEFINE résszó

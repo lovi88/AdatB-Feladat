@@ -1,0 +1,93 @@
+Nem szerinti lakólista, név szerint növekvõen listázva
+A listázandóak neme: {n|f} n
+
+                       Nem szerinti lakólista, név szerint növekvõen listázva                       
+                    ============================================================                    
+                                                                                                    
+                                                                                                    
+                      Egészség-                   Személy-                                          
+                     biztosítási    Születési    igazolvány                                         
+        Neve            szám          dátum         szám                                            
+-------------------- ----------- --------------- ----------                                         
+Alease Boyer         541706019   1992-09-09      204453CA                                           
+                                                                                                    
+                                                                                                    
+Ashly Ferrell        905573925   1991-03-11      811461FA                                           
+                                                                                                    
+                                                                                                    
+Bette Contreras      846169522   1989-10-18      561066CA                                           
+                                                                                                    
+                                                                                                    
+Colton Ramos         975432346   2003-05-09      342083KA                                           
+                                                                                                    
+                                                                                                    
+Corina Head          827416495   1995-10-22      959692HA                                           
+                                                                                                    
+                                                                                                    
+Corina Morales       909229179   1993-03-03      083752KA                                           
+                                                                                                    
+                                                                                                    
+Dario Gates          372372233   1997-10-06      061262HA                                           
+                                                                                                    
+                                                                                                    
+Edgardo Walter       895347619   2003-06-12      079145KA                                           
+                                                                                                    
+                                                                                                    
+Ehtel Moon           074530611   1993-02-16      719994GA                                           
+                                                                                                    
+                                                                                                    
+Ellsworth Barker     934426460   2002-02-05      703762CA                                           
+                                                                                                    
+                                                                                                    
+Jeanetta Sandoval    646451976   2000-10-02      755564LA                                           
+                                                                                                    
+                                                                                                    
+Jeffry Spencer       457369261   1989-11-02      087696KA                                           
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+                       Nem szerinti lakólista, név szerint növekvõen listázva                       
+                    ============================================================                    
+                                                                                                    
+                                                                                                    
+                      Egészség-                   Személy-                                          
+                     biztosítási    Születési    igazolvány                                         
+        Neve            szám          dátum         szám                                            
+-------------------- ----------- --------------- ----------                                         
+                                                                                                    
+                                                                                                    
+Kelly Harper         689145145   1998-10-07      610406HA                                           
+                                                                                                    
+                                                                                                    
+Mac Conrad           325930610   1991-04-16      577961DA                                           
+                                                                                                    
+                                                                                                    
+Marcelino Carroll    051884531   1997-05-16      562774JA                                           
+                                                                                                    
+                                                                                                    
+Michael Ball         286411333   1991-04-12      300964GA                                           
+                                                                                                    
+                                                                                                    
+Natividad Hudson     467581788   2000-06-28      259055DA                                           
+                                                                                                    
+                                                                                                    
+Robin Marsh          566090825   1997-06-09      152653FA                                           
+                                                                                                    
+                                                                                                    
+Shanita Harrington   886430197   1999-04-14      378574LA                                           
+                                                                                                    
+                                                                                                    
+Sherlene Sims        914695312   1990-08-29      467985BA                                           
+                                                                                                    
+                                                                                                    
+Willis Roman         326817161   1999-03-24      936144HA                                           
+                                                                                                    
+                                                                                                    
+Woodrow Bates        490833657   2000-02-17      277786DA                                           
+                                                                                                    
+                                                                                                    
+
+
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+22 sor kijelölve.
+

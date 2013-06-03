@@ -1,0 +1,12 @@
+Lakó módosítása
+Módosítani kívánt Lakó kijelölése
+Lakó neve: Pisti
+Lakó Egészségbiztosítási száma: 123456789
+Melyik oszlopot kívánja módosítani
+(Név|Egészségbiztosítási_szám|SzületésiDátum|Nem|Személyigazolvány_szám)
+(Tartózkodas_tól|Tartózkodas_ig|Ország|ház_szám|Csoportvezetõ)
+módosítandó tulajdonság : Egészségbiztosítási_szám
+adja meg az értéket, amire átírja: 987654321
+
+1 sor módosítva.
+
