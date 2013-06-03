@@ -1,0 +1,27 @@
+oszlop törlése (fizikai)
+Melyik táblának szeretné módosítani az oszlopát:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+HÁZAK                                             
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+HÁZAK
+ Név                     Üres?    Típus
+ ----------------------- -------- ----------------
+ HÁZ_SZÁM                NOT NULL NUMBER(3)
+ HÁZ_MEGNEVEZÉS          NOT NULL VARCHAR2(25)
+ FÉRÕHELY_SZÁM           NOT NULL NUMBER(3)
+ O2                               DATE
+
+oszlop neve: O2
+kulcsmegszorítások ellenére is megtörténjen a törlés (igen: CASCADE CONSTRAINTS nem: szünet jel) :
+
+A tábla módosítva.
+

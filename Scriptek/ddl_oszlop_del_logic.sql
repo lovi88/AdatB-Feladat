@@ -1,12 +1,17 @@
-PROMPT oszlop t√∂rl√©se (logikai)
+--@ddl_oszlop_del_logic
+set linesize 50
+PROMPT oszlop tˆrlÈse (logikai)
 
-PROMPT Melyik t√°bl√°nak szeretn√© t√∂r√∂lni az oszlop√°t:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bl·nak szeretnÈ tˆrˆlni az oszlop·t:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla
+ACCEPT t·bla
+
+desc &t·bla
+
 ACCEPT o_neve PROMPT 'oszlop neve: '
 
-ALTER TABLE &t√°bla SET UNUSED (&o_neve);
+ALTER TABLE &t·bla SET UNUSED (&o_neve);

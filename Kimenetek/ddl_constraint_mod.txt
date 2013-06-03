@@ -1,0 +1,21 @@
+Megszorítás megváltoztatása
+Melyik tábla megszorításait szeretné kezelni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+KÉGLIK                                            
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+tábla neve: KÉGLIK
+a kiválasztott táblához tartozó megszorítások:
+Adja meg a módosítandót: c_Kéglik
+Módosítás típusa (ENABLE | DISABLE): DISABLE
+
+A tábla módosítva.
+

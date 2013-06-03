@@ -1,25 +1,25 @@
-PROMPT Megszor√≠t√°s megv√°ltoztat√°sa
+--@ddl_constraint_mod
+set linesize 50
+PROMPT MegszorÌt·s megv·ltoztat·sa
 
-PROMPT Melyik t√°bla megszor√≠t√°sait szeretn√© kezelni:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bla megszorÌt·sait szeretnÈ kezelni:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla PROMPT 't√°bla neve: '
+ACCEPT t·bla PROMPT 't·bla neve: '
 
-PROMPT a kiv√°lasztott t√°bl√°hoz tartoz√≥ megszor√≠t√°sok:
+PROMPT a kiv·lasztott t·bl·hoz tartozÛ megszorÌt·sok:
 
 SELECT constraint_name, constraint_type
 FROM user_constraints
-WHERE table_name = '&t√°bla'
+WHERE table_name = '&t·bla'
 
-ACCEPT constraint_name PROMPT 'Adja meg a m√≥dos√≠tand√≥t: '
-
-ACCEPT modositas PROMPT 'M√≥dos√≠t√°s t√≠pusa (ENABLE | DISABLE)'
-
+ACCEPT constraint_name PROMPT 'Adja meg a mÛdosÌtandÛt: '
+ACCEPT modositas PROMPT 'MÛdosÌt·s tÌpusa (ENABLE | DISABLE): '
 
 ALTER TABLE
-   &t√°bla
+   &t·bla
 &modositas CONSTRAINT
-   constraint_name;
+   &constraint_name;

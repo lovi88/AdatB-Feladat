@@ -1,0 +1,19 @@
+Tábla átnevezés
+Melyik táblát szeretné átnevezni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+HÁZAK                                             
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+tábla eddigi neve: HÁZAK
+tábla új neve: Kéglik
+
+A tábla átnevezve.
+

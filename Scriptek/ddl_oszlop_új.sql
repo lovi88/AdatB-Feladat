@@ -1,3 +1,5 @@
+--@ddl_oszlop_új
+set linesize 50
 PROMPT Új oszlop felvétele
 
 PROMPT Táblák:

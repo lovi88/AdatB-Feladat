@@ -1,0 +1,26 @@
+Oszlop átnevezés
+Melyik táblának szeretné átnevezni az oszlopát:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+HÁZAK                                             
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+HÁZAK
+ Név                     Üres?    Típus
+ ----------------------- -------- ----------------
+ HÁZ_SZÁM                NOT NULL NUMBER(3)
+ HÁZ_MEGNEVEZÉS          NOT NULL VARCHAR2(25)
+ FÉRÕHELY_SZÁM           NOT NULL NUMBER(3)
+
+oszlop neve eddigi: HÁZ_MEGNEVEZÉS
+oszlop neve új: h_n
+
+A tábla módosítva.
+

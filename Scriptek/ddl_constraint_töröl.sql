@@ -1,20 +1,22 @@
-PROMPT Megszor√≠t√°s t√∂rl√©s
+--@ddl_constraint_tˆrˆl
+set linesize 70
+PROMPT MegszorÌt·s tˆrlÈs
 
-PROMPT Melyik t√°bla megszor√≠t√°sait szeretn√© kezelni:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bla megszorÌt·sait szeretnÈ kezelni:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla PROMPT 't√°bla neve: '
+ACCEPT t·bla PROMPT 't·bla neve: '
 
-PROMPT a kiv√°lasztott t√°bl√°hoz tartoz√≥ megszor√≠t√°sok:
+PROMPT a kiv·lasztott t·bl·hoz tartozÛ megszorÌt·sok:
 
 SELECT constraint_name, constraint_type
 FROM user_constraints
-WHERE table_name = '&t√°bla'
+WHERE table_name = '&t·bla';
 
-ACCEPT con PROMPT 'Adja meg a t√∂rlend≈ët: '
+ACCEPT con PROMPT 'Adja meg a tˆrlendıt: '
 
-ALTER TABLE &t√°bla
+ALTER TABLE &t·bla
 DROP CONSTRAINT &con;

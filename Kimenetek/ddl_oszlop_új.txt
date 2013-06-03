@@ -1,0 +1,62 @@
+Új oszlop felvétele
+Táblák:
+
+TABLE_NAME                                        
+------------------------------                    
+DEPT                                              
+EMP                                               
+BONUS                                             
+SALGRADE                                          
+LAKÓK                                             
+CSOPORTOK                                         
+HÁZAK                                             
+DOLGOZÓ                                           
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+10 sor kijelölve.
+
+Melyik táblához szeretne új oszlopot felvenni:
+HÁZAK
+
+ Név                     Üres?    Típus
+ ----------------------- -------- ----------------
+ HÁZ_SZÁM                NOT NULL NUMBER(3)
+ HÁZ_MEGNEVEZÉS          NOT NULL VARCHAR2(25)
+ FÉRÕHELY_SZÁM           NOT NULL NUMBER(3)
+
+
+A létrehozandó oszlop neve: o1
+A létrehozandó oszlop típusa: NUMBER
+
+A tábla módosítva.
+
+Új oszlop felvétele
+Táblák:
+
+TABLE_NAME                                        
+------------------------------                                                        
+LAKÓK                                             
+CSOPORTOK                                         
+HÁZAK                                             
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+Melyik táblához szeretne új oszlopot felvenni:
+HÁZAK
+
+ Név                     Üres?    Típus
+ ----------------------- -------- ----------------
+ HÁZ_SZÁM                NOT NULL NUMBER(3)
+ HÁZ_MEGNEVEZÉS          NOT NULL VARCHAR2(25)
+ FÉRÕHELY_SZÁM           NOT NULL NUMBER(3)
+ O1                               NUMBER
+
+
+A létrehozandó oszlop neve: o2
+A létrehozandó oszlop típusa: VARCHAR(2)
+
+A tábla módosítva.
+

@@ -1,0 +1,30 @@
+Megszorítás törlés
+Melyik tábla megszorításait szeretné kezelni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+KÉGLIK                                            
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+tábla neve: KÉGLIK
+a kiválasztott táblához tartozó megszorítások:
+
+CONSTRAINT_NAME                C                  
+------------------------------ -                  
+SYS_C005560                    C                  
+SYS_C005561                    C                  
+P_HÁZAK                        P                  
+C_KÉGLIK                       C                  
+
+4 sor kijelölve.
+
+Adja meg a törlendõt: C_KÉGLIK
+
+A tábla módosítva.
+

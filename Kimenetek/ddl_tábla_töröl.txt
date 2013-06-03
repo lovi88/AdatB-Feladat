@@ -1,0 +1,46 @@
+Tábla törlése
+Melyik táblát szeretné törölni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+KÉGLIK                                            
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+10 sor kijelölve.
+
+tábla neve: KÉGLIK
+cascade opció: (CASCADE CONSTRAINTS | enter): 
+DROP TABLE KÉGLIK 
+           *
+Hiba a(z) 1. sorban:
+ORA-02449: idegen kulcs hivatkozik az 
+egyedi/elsõdleges kulcsokra 
+
+
+Tábla törlése
+Melyik táblát szeretné törölni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+DEPT                                              
+EMP                                               
+BONUS                                             
+SALGRADE                                          
+LAKÓK                                             
+CSOPORTOK                                         
+DOLGOZÓ                                           
+KÉGLIK                                            
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+10 sor kijelölve.
+
+tábla neve: KÉGLIK
+cascade opció: (CASCADE CONSTRAINTS | enter): CASCADE CONSTRAINTS
+
+A tábla eldobva.

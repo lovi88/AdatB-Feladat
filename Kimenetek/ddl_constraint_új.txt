@@ -1,0 +1,19 @@
+Megszorítás hozzáadása
+Melyik tábla megszorításait szeretné kezelni:
+Lehetõségek:
+
+TABLE_NAME                                        
+------------------------------                    
+LAKÓK                                             
+CSOPORTOK                                         
+KÉGLIK                                            
+CSOP_PUFFER                                       
+CSOPORTOKARCH                                     
+
+5 sor kijelölve.
+
+tábla neve: KÉGLIK
+Adja meg a megszorítás nevét: c_Kéglik
+Adja meg a megszorítás törzsét: CHECK( FÉRÕHELY_SZÁM < 200 )
+
+A tábla módosítva.

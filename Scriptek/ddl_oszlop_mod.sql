@@ -1,3 +1,5 @@
+--@ddl_oszlop_mod
+set linesize 50
 PROMPT oszlop múdosítás
 
 PROMPT Melyik táblának szeretné módosítani az oszlopát:

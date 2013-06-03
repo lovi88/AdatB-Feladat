@@ -1,12 +1,14 @@
-PROMPT TÃ¡bla tÃ¶rlÃ©se 
+--@ddl_tábla_töröl
+set linesize 50
+PROMPT Tábla törlése 
 
-PROMPT Melyik tÃ¡blÃ¡t szeretnÃ© tÃ¶rÃ¶lni:
-PROMPT LehetÅ‘sÃ©gek:
+PROMPT Melyik táblát szeretné törölni:
+PROMPT Lehetõségek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT tÃ¡bla PROMPT 'tÃ¡bla neve: '
+ACCEPT tábla PROMPT 'tábla neve: '
+ACCEPT cas PROMPT 'cascade opció: (CASCADE CONSTRAINTS | enter): '
 
-
-DROP &tÃ¡bla;
+DROP TABLE &tábla &cas;

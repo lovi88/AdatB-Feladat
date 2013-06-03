@@ -1,17 +1,17 @@
-PROMPT Megszor√≠t√°s hozz√°ad√°sa
+--@ddl_constraint_˙j
+set linesize 50
+PROMPT MegszorÌt·s hozz·ad·sa
 
-PROMPT Melyik t√°bla megszor√≠t√°sait szeretn√© kezelni:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bla megszorÌt·sait szeretnÈ kezelni:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla PROMPT 't√°bla neve: '
+ACCEPT t·bla PROMPT 't·bla neve: '
 
-ACCEPT constraint_name PROMPT 'Adja meg: '
+ACCEPT constraint_name PROMPT 'Adja meg a megszorÌt·s nevÈt: '
+ACCEPT constraint_body PROMPT 'Adja meg a megszorÌt·s tˆrzsÈt: '
 
-
-
---TODO: T√≠pusf√ºgg≈ë l√©trehoz√°s (primary,foreign,check)
---ALTER TABLE &t√°bla
---ADD CONSTRAINT 
+ALTER TABLE &t·bla
+ADD CONSTRAINT &constraint_name &constraint_body;

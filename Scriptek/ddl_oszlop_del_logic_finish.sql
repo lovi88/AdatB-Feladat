@@ -1,11 +1,13 @@
-PROMPT logikai t√∂rl√©sek v√©gleges√≠t√©se
+--@ddl_oszlop_del_logic_finish
+set linesize 50
+PROMPT logikai tˆrlÈsek vÈglegesÌtÈse
 
-PROMPT Melyik t√°bl√°nak szeretn√© m√≥dos√≠tani az oszlop√°t:
-PROMPT Lehet≈ës√©gek:
+PROMPT Melyik t·bl·nak szeretnÈ mÛdosÌtani az oszlop·t:
+PROMPT LehetısÈgek:
 
 SELECT table_name
 FROM user_tables;
 
-ACCEPT t√°bla
+ACCEPT t·bla
 
-ALTER TABLE &t√°bla DROP UNUSED COLUMNS;
+ALTER TABLE &t·bla DROP UNUSED COLUMNS;
