@@ -1,8 +1,6 @@
 --@Lakó_Legfiatalabb_ALL
-
-
-SET LINESIZE 150
-SET PAGESIZE 15
+SET LINESIZE 100
+SET PAGESIZE 13
 
 BTITLE 'Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.'
 
@@ -14,9 +12,6 @@ COLUMN Egészségbiztosítási_szám FORMAT A11 HEADING 'Egészség-|biztosítási|szám' 
 COLUMN SzületésiDátum			FORMAT A15 HEADING 'Születési|dátum' JUSTIFY CENTER
 COLUMN Nem						FORMAT A4 HEADING 'Neme' JUSTIFY CENTER
 COLUMN Személyigazolvány_szám	FORMAT A10 HEADING 'Személy-|igazolvány|szám' JUSTIFY CENTER
-COLUMN Tartózkodas_tól			FORMAT A13 HEADING 'Tartózkodás|kezdete' JUSTIFY CENTER
-COLUMN Tartózkodas_ig			FORMAT A13 HEADING 'Tartózkodás|vége' JUSTIFY CENTER
-COLUMN Ország					FORMAT A20 HEADING 'Ország' JUSTIFY CENTER
 
 
 SELECT 
@@ -24,10 +19,7 @@ SELECT
 	Egészségbiztosítási_szám,
 	SzületésiDátum,
 	Nem,
-	Személyigazolvány_szám,
-	Tartózkodas_tól,
-	Tartózkodas_ig,
-	Ország
+	Személyigazolvány_szám
 FROM Lakók
 where SzületésiDátum >= ALL (Select SzületésiDátum From Lakók);
 

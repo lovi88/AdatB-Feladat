@@ -1,9 +1,10 @@
+--@Lakó_nem_átlagéletkor
 --Adott nemû Lakók átlagéletkora
 PROMPT Adott nemû Lakók átlagéletkora
-ACCEPT n CHAR PROMPT 'A listázandóak neme: {n|f}'
+ACCEPT n CHAR PROMPT 'A listázandóak neme: {n|f} '
 
-SET LINESIZE 150
-SET PAGESIZE 200
+SET LINESIZE 100
+SET PAGESIZE 10
 
 BTITLE 'Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.'
 
@@ -14,10 +15,8 @@ CENTER ============================================================ SKIP 3
 SELECT 
 	AVG((TO_CHAR(SYSDATE,'YYYY') - TO_CHAR(SzületésiDátum,'YYYY'))) as Átlagéletkor
 FROM Lakók
-ORDER BY Név
-HAVING Nem=LOWER(&n);
-
-
+WHERE Nem=LOWER('&n')
+GROUP BY Nem;
 
 TTITLE OFF
 BTITLE OFF

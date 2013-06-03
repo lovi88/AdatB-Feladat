@@ -1,0 +1,11 @@
+Új Lakó felvétele
+Adja meg a nevét: Pisti
+Adja meg Egészségbiztosítási számát: 123456789
+Adja meg a Születési Dátumát: 1988.03.20
+Adja meg a nemét: f
+Adja meg a Személyigazolvány számát: 123456789AB
+Adja meg a Tartózkodas kezdetét: 2013.01.01
+Adja meg a Tartózkodas végét: 2013.02.02
+Adja meg az országát: Magyar
+
+1 sor létrejött.

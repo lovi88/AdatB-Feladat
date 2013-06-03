@@ -1,0 +1,18 @@
+
+                         Házba még be nem sorolt lakók országonkénti listája                        
+                   ==============================================================                   
+                                                                                                    
+                                                                                                    
+                      Egészség-                        Személy-                                     
+                     biztosítási         Születési    igazolvány                                    
+        Neve            szám     Neme      dátum         szám                                       
+-------------------- ----------- ---- --------------- ----------                                    
+Alease Boyer         541706019   n    1992-09-09      204453CA                                      
+                                                                                                    
+                                                                                                    
+
+
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+1 sor kijelölve.
+

@@ -1,0 +1,6 @@
+Lakó Törlése
+Törölni kívánt Lakó kijelölése
+Lakó neve: Pisti
+Lakó Egészségbiztosítási száma: 987654321
+
+1 sor törölve.

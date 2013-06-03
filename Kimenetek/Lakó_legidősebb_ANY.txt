@@ -1,0 +1,16 @@
+
+                                            Lakók Listája                                           
+                                        ====================                                        
+                                                                                                    
+                                                                                                    
+                      Egészség-                        Személy-                                     
+                     biztosítási    Születési         igazolvány                                    
+        Neve            szám          dátum      Neme    szám                                       
+-------------------- ----------- --------------- ---- ----------                                    
+Assunta Holman       214782455   1988-04-29      f    284700GA                                      
+                                                                                                    
+                                                                                                    
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+1 sor kijelölve.
+

@@ -1,0 +1,29 @@
+Adja meg a keresett résszót: do
+
+                            A "do" résszót tartalmazó nevû lakók listája                            
+                   ==============================================================                   
+                                                                                                    
+                                                                                                    
+                      Egészség-                       Személy-                                      
+                     biztosítási   Születési         igazolvány                                     
+        Neve            szám         dátum      Neme    szám                                        
+-------------------- ----------- -------------- ---- ----------                                     
+Edgardo Walter       895347619   2003-06-12     n    079145KA                                       
+                                                                                                    
+                                                                                                    
+Hugo Maldonado       992531646   2004-02-11     f    881597HA                                       
+                                                                                                    
+                                                                                                    
+Jeanetta Sandoval    646451976   2000-10-02     n    755564LA                                       
+                                                                                                    
+                                                                                                    
+Rodolfo Hamilton     402222458   1990-04-14     f    809327DA                                       
+                                                                                                    
+                                                                                                    
+
+
+
+                    Készült: a Táborhely Üzemeltetõi segédszoftver segíségével.
+
+4 sor kijelölve.
+
